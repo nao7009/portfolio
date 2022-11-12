@@ -34,8 +34,8 @@ const routes = [
 ]
 const router = new VueRouter({
   mode: 'history',
-  // base: process.env.BASE_URL,
-  base: "/portfolio/",
+  base: process.env.BASE_URL,
+  // base: "/portfolio/",
   routes
 })
 export default router
