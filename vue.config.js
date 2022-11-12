@@ -2,6 +2,7 @@
 
 module.exports = {
   outputDir: 'docs',
+  assetsDir: './',
   publicPath: './',
   css: {
     loaderOptions: {
