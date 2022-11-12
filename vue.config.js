@@ -1,4 +1,13 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+// vue.config.js
+
+module.exports = {
+  outputDir: 'docs',
+  publicPath: './',
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "@/assets/scss/_variables.scss";`
+      }
+    }
+  }
+};

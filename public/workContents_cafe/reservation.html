@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>workContents_cafe</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/slick-theme.css"/>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__contents">
+                <div class="header__contents--logo">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>
+                <div class="header__contents--menu">
+                    <ul>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="atmosphere.html">atmosphere</a></li>
+                        <li><a href="reservation.html">reservation</a></li>
+                        <li><a href="access&info.html">access&info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <h1>reservation</h1>
+            <div class="main__contents">
+                <div class="main__contents--reservation">
+                    <p>ランチとディナーの予約は下記のフォームより予約を承っております。</p>
+                    <!-- YYYY年MM月を表示 -->
+                    <h1 id="header"></h1>
+                    <!-- ボタンクリックで月移動 -->
+                    <div id="next-prev-button">
+                        <button id="prev" onclick="prev()"><</button>
+                        <button id="prev" onclick="next()">></button>
+                    </div>
+                    <!-- カレンダー -->
+                    <div id="calender"></div>
+                    <!--予約フォーム-->
+                    <div id="form">
+                        <form action="reservation" method="post">
+                            <table>
+                                <tr>
+                                    <td>
+                                        日付：<input type="date" name="name">
+                                    </th>
+                                    <td>
+                                        時間：<select name="time">
+                                                <option>12:00</option>
+                                                <option>13:00</option>
+                                                <option>14:30</option>
+                                                <option>15:00</option>
+                                                <option>16:00</option>
+                                                <option>17:00</option>
+                                                <option>18:00</option>
+                                            </select>                                        
+                                    </td>
+                                    <td>
+                                        人数：<select name="time">
+                                                <option>2名</option>
+                                                <option>3名</option>
+                                                <option>4名</option>
+                                                <option>5名</option>
+                                                <option>6名</option>
+                                                <option>7名以上</option>
+                                            </select>                                      
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        お名前：<input type="text" name="name">
+                                    </td>
+                                    <td colspan="2">
+                                        フリガナ：<input type="text" name="name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        メールアドレス：<input type="text" name="mail">
+                                    </td>
+                                    <td colspan="2">
+                                        電話番号：<input type="text" name="tel">                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="submit" name="button" value="送信">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__contents">
+                <div class="footer__contents--sns">
+                    <ul>
+                        <li><a href="https://twitter.com/?lang=ja"><img src="images/twitter.png"></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/instagram.png"></a></li>
+                        <li><a href="https://ja-jp.facebook.com/"><img src="images/facebook.png"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__contents--copy">
+                    <p>Copyright 2022 Cafe CRI All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
