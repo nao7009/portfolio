@@ -22,7 +22,6 @@ import MyProfile  from '@/components/Profile'    /*後ほど作成するファ�
 import MyWorks from '@/components/Works' /*後ほど作成するファイルです*/
 import ContactForm from '@/components/Contact' /*後ほど作成するファイルです*/
 
-console.log("process.env.BASE_URL", process.env.BASE_URL)
 Vue.use(VueRouter)
 
 const routes = [
@@ -34,7 +33,7 @@ const routes = [
 ]
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: process.env.NODE_ENV === "development" ? process.env.BASE_URL : "/portfolio/",
   // base: "/portfolio/",
   routes
 })
