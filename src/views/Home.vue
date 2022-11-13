@@ -2,21 +2,21 @@
 <template>
   <div class="home">
     <MyHeader/>
-    <MainMenu/>
+    <MyProfile/>
     <MyFooter/>
   </div>
 </template>
 
 <script>
 import MyHeader from '@/components/MyHeader.vue'
-import MainMenu from '@/components/Main.vue'
+import MyProfile from '@/components/Main.vue'
 import MyFooter from '@/components/MyFooter.vue'
 
 export default {
   name: 'HomePage',
   components: {
     MyHeader,
-    MainMenu,
+    MyProfile,
     MyFooter,
   }
 }

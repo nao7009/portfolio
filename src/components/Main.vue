@@ -2,45 +2,71 @@
 <template>
         <main class="main">
             <div class="main__title">
-                <h2>PORTFOLIO</h2>
-                <p>Nao Shimojo</p>
+                <h2>PORTFOLIO SITE</h2>
             </div>
-            <ModalItem :modalItems="modalItems[0]" />
-            <ModalItem :modalItems="modalItems[1]" />
             <div class="main__contents">
-                <div class="main__contents--link">
-                    <li><router-link to="/works">view more</router-link></li>
+                <div class="main__contents--image">
+                    <img src="../assets/images/work.png">
                 </div>
+                <div class="main__contents--text">
+                    <h3>Nao Shimojo</h3>
+                    <p>静岡県出身。神奈川県在住。<br>外ではエンジニア、家では一児の母。<br>思い描いたものを形にすることや、興味があるものを追求することが好き。<br>フロントエンドエンジニアとしてWeb制作に携わることを目標に、業務の傍らで日々勉強中。</p>
+                </div> 
+            </div>
+            <div class="main__carrer">
+                <div class="main__carrer--title">
+                    <h3>Carrer</h3>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2021.08～2022.09 | 官公庁システムの運用・保守</p>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2021.06～2021.07 | オウンドメディアのサイト制作</p>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2020.12～2021.06 | 新入社員研修のJava講師</p>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2020.12 | 株式会社クリエイティブリソースインスティチュートに入社</p>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2020.04~2020.12 | 結婚を機にキャリアチェンジ</p>
+                </div>
+                <div class="main__carrer--item">
+                    <img src="../assets/images/triangle.png">
+                    <p>2017.04～2020.03 | 大学卒業後、保育士として働く</p>
+                </div>               
+            </div>
+            <div class="main__contents">
+                <div class="main__contents--skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML/CSS<br>デザインに沿った静的ページのコーディング、CSSアニメーション（調べながらであれば可）</li>
+                        <li>WordPressを使用したwebページ制作(PHP)<br>インストールおよび初期設定、既存のページに追加するページ作成</li>
+                        <li>Java(Servlet/jsp)<br>データベースを用いた簡易なアプリケーションの作成、設計図を見ながらのコーディング</li>
+                        <li>SQL<br>コードの内容理解、データベース作成（調べながらであれば可）</li>
+                        <li>Word<br>書類作成</li>
+                        <li>Excel<br>資料作成（計算、関数など）</li>
+                        <li>PowerPoint<br>スライド作成（アニメーション付け可）</li>
+                    </ul>
+                </div>              
             </div>
         </main>
 </template>
 
 <script>
-import ModalItem from "@/components/ModalItem"
 
 export default {
-  name: 'MainMenu',
-   components: {
-    ModalItem,
-  },
-  data() {
-   return {
-        modalItems: [
-        {
-            modalTtl: "CRI病院",
-            modalContent: "架空の病院のwebサイトです。HTML/CSS/Javascriptを用いて作成しています。地図の挿入や問い合わせフォームは自身で調べながら作成しました。jQueryを用いてフェードインの機能を実装しています。制作にかかった時間は約12時間です。(HTML：4時間、CSS：4.5時間、js：3.5時間)",
-            modalImage: require('@/assets/images/medical_main.png'),
-            modalLink: "./workContents_hospital/index.html",
-        },
-        {
-            modalTtl: "CRIカフェ",
-            modalContent: "架空のカフェのwebサイトです。HTML/CSS/Javascriptを用いて作成しています。地図の挿入や問い合わせフォームは自身で調べながら作成しました。また、カレンダーも調べながら作成しました。jQueryを用いてフェードインやスライドの機能を実装しています。スライドの機能はslickを使用し、手動でスライドする画面と自動でスライドする画面両方を実装しました。制作にかかった時間は約14時間です。(HTML：4時間、CSS：5.5時間、js：4.5時間)",
-            modalImage: require('@/assets/images/cafe_main.jpg'),
-            modalLink: "./workContents_cafe/index.html",
-        },
-        ],
-    }
-  },
+  name: 'MyProfile',
 }
 
 </script>
@@ -49,6 +75,7 @@ export default {
 .main{
     &__title{
         text-align: center;
+        margin: 10px auto 40px;
         h2{
             font: normal 30px sans-serif;
             @include mq('max','md') {
@@ -68,28 +95,177 @@ export default {
     }
     &__contents{
         width: 85%;
-        margin: 10px auto 0;
+        margin: 50px auto;
+        display: flex;
         @include mq('max','md') {
             width: 100%;
-            margin: 5px auto 0;
+            display: block;
         }
-        &--link{
+        &--image{
+            flex: 1;
+            @include mq('max','md') {
+                width: 250px;
+                height: 150px;
+                margin: 0 auto;
+            }
+            img{
+                width: 450px;
+                height: 330px;
+                @include mq('max','md') {
+                width: 250px;
+                height: 150px;
+            }
+            }        
+        }
+        &--text{
             margin: 0 auto;
-            width: 250px;
-            text-align: center;
-            a{
-                display: block;
+            flex: 1;
+            @include mq('max','md') {
+                margin-top: 15px;
+                width: 100%;
+            }
+            p{
+                font: normal 15px sans-serif;
+                color: #555;
+                margin: 0 10px;
+                width: 80%;
+                @include mq('max','md') {
+                    margin: 0 auto;
+                    width: 100%;
+                    font: normal 11px sans-serif;
+                    text-align: center;
+                }
+            }
+            h3{
+                margin: 0 10px;
                 padding: 10px;
                 font: normal 18px sans-serif;
-                color: #555;
                 @include mq('max','md') {
+                    margin: 0 auto;
+                    text-align: center;
+                    font: normal 15px sans-serif; 
+                }            
+            }
+
+        }
+        &--skills{
+            margin: 0 auto;
+            @include mq('max','md') {
+                width: 100%;
+            }
+            h3{
+                margin-top: 30px;
+                margin-left: 100px;
+                font: normal 18px sans-serif;
+                @include mq('max','md') {
+                    margin: 0 auto;
+                    text-align: center;
                     font: normal 15px sans-serif;
                 }
-                &:hover{
-                    background-color: #999;
+            }
+            ul{
+                margin: 0 auto;
+                font: normal 15px sans-serif;
+                color: #555;
+                width: 80%;
+                @include mq('max','md') {
+                    width: 95%;
+                    padding-top: 0;
+                }
+                li{
+                    list-style-image: url(../assets/images/triangle.png);
+                    @include mq('max','md') {
+                        font-size: 10px;
+                        margin: 5px;
+                        padding: 5px; 
+                    }
                 }
             }
         }
     }
+    &__carrer{
+            margin: 0 auto;
+            @include mq('max','md') {
+                width: 100%;
+            }
+            &--title{
+                h3{
+                    text-align: center;
+                    font: normal 18px sans-serif;
+                        @include mq('max','md') {
+                        margin: 0 auto;
+                        text-align: center;
+                        font: normal 15px sans-serif;
+                        }
+                    }
+            }
+        &--item{ 
+            width: 85%;
+            margin: 1.5em auto;
+            overflow: hidden;
+            @include mq('max','md') {
+            }
+            img{
+                float: left;
+                margin-right: -90px;
+                width: 80px;
+                height: auto;
+                border: solid 3px #d7ebfe;
+                border-radius: 50%;
+                @include mq('max','md') {
+                }                
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                position: relative; 
+                margin: 5px 0 0 105px;
+                padding: 17px 13px;
+                border-radius: 12px;
+                background: #d7ebfe;
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 18px; 
+                    left: -24px;
+                    border: 12px solid transparent;
+                    border-right: 12px solid #d7ebfe;
+                } 
+            }
+        }
+
+            ul{
+                font: normal 15px sans-serif;
+                color: #555;
+                @include mq('max','md') {
+                    padding-top: 0;
+                    margin: 0 auto;
+                }
+                li{
+                    display: inline-block;
+                    position: relative; 
+                    margin: 5px 0 0 105px;
+                    padding: 17px 13px;
+                    border-radius: 12px;
+                    background: #d7ebfe;
+                    &:after{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        top: 18px; 
+                        left: -24px;
+                        border: 12px solid transparent;
+                        border-right: 12px solid #d7ebfe;
+                    }
+                    @include mq('max','md') {
+                        font-size: 10px;
+                        margin: 5px;
+                        padding: 5px; 
+                    }
+                }
+            }
+        }
 }
 </style>
