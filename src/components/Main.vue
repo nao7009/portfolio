@@ -17,33 +17,47 @@
                 <div class="main__carrer--title">
                     <h3>Carrer</h3>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemSummary">
                     <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--itemSummary">
                     <p>2021.08～2022.09 | 官公庁システムの運用・保守</p>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--itemSummary">
                     <p>2021.06～2021.07 | オウンドメディアのサイト制作</p>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--itemSummary">
                     <p>2020.12～2021.06 | 新入社員研修のJava講師</p>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--itemSummary">
                     <p>2020.12 | 株式会社クリエイティブリソースインスティチュートに入社</p>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--itemSummary">
                     <p>2020.04~2020.12 | 結婚を機にキャリアチェンジ</p>
                 </div>
-                <div class="main__carrer--item">
-                    <img src="../assets/images/triangle.png">
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                </div>
+                <div class="main__carrer--itemSummary">
                     <p>2017.04～2020.03 | 大学卒業後、保育士として働く</p>
+                </div>
+                <div class="main__carrer--itemDetail">
+                    <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
                 </div>               
             </div>
             <div class="main__contents">
@@ -199,28 +213,29 @@ export default {
                         }
                     }
             }
-        &--item{ 
+        &--itemSummary{ 
             width: 85%;
             margin: 1.5em auto;
             overflow: hidden;
+            display: flex;
+            align-items: center;
             @include mq('max','md') {
             }
-            img{
-                float: left;
-                margin-right: -90px;
+            &:before{
+                content: "";
+                background: url(../assets/images/triangle.png) no-repeat center;
+                display: inline-block;
                 width: 80px;
-                height: auto;
+                height: 80px;
                 border: solid 3px #d7ebfe;
                 border-radius: 50%;
-                @include mq('max','md') {
-                }                
             }
             p{
                 margin: 0;
                 padding: 0;
                 display: inline-block;
                 position: relative; 
-                margin: 5px 0 0 105px;
+                margin: 5px 0 0 40px;
                 padding: 17px 13px;
                 border-radius: 12px;
                 background: #d7ebfe;
@@ -235,37 +250,48 @@ export default {
                 } 
             }
         }
-
-            ul{
-                font: normal 15px sans-serif;
-                color: #555;
-                @include mq('max','md') {
-                    padding-top: 0;
-                    margin: 0 auto;
-                }
-                li{
-                    display: inline-block;
-                    position: relative; 
-                    margin: 5px 0 0 105px;
-                    padding: 17px 13px;
-                    border-radius: 12px;
-                    background: #d7ebfe;
-                    &:after{
-                        content: "";
-                        display: inline-block;
-                        position: absolute;
-                        top: 18px; 
-                        left: -24px;
-                        border: 12px solid transparent;
-                        border-right: 12px solid #d7ebfe;
-                    }
+        &--itemDetail{
+            width: 85%;
+            margin: 1.5em auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            @include mq('max','md') {
+            }
+            p{
+                display: inline-block;
+                position: relative; 
+                margin: 0 40px 0 0;
+                padding: 8px;
+                // max-width: 250px;
+                border-radius: 12px;
+                background: #30e852;
+                font-size: 15px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 3px; 
+                    right: -19px;
+                    border: 8px solid transparent;
+                    border-left: 18px solid #30e852;
+                    -webkit-transform: rotate(-35deg);
+                    transform: rotate(-35deg);
                     @include mq('max','md') {
-                        font-size: 10px;
-                        margin: 5px;
-                        padding: 5px; 
                     }
+                } 
+            }
+            &:after{
+                content: "";
+                background: url(../assets/images/triangle.png) no-repeat center;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                border: solid 3px #d7ebfe;
+                border-radius: 50%;
+                @include mq('max','md') {
                 }
             }
         }
+    }
 }
 </style>
