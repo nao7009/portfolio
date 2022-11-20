@@ -18,6 +18,10 @@ a{
 body, header, footer, main, section, p, ul, li{
     margin: 10px;
     padding: 10px;
+    @include mq('max','md') {
+        margin: 5px;
+        padding: 5px;
+    }
 }
 
 /*枠線の確認用に一時的に適応 後で削除*/
