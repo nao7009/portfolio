@@ -33,60 +33,52 @@
                         <p>Windows端末の緊急性の高いパッチ適用やWAF、Windowsサーバのアップデート、<br>利用機関のDNSやメールの設定変更を担当していました。<br>正確性が問われる作業だったので、常にペア間で確認を怠らずに検証やリリースを行っていました。<br>また、スケジュールを常に把握し作業が滞ることなく進められるように配慮をしていました。<br>環境：Windows、Linux<br>使用ツール：teraterm、SKYSEA、WSUS、IIS、VMware、Citrixなど</p>
                     </div>
                 </div>
-                <div class="main__moreInfoButton" v-if="!expand" @click="open">
-                    <p>もっと見る</p>
+                <div class="main__carrerItem">
+                <div class="main__carrerItemSummary">
+                    <p>2021.06～2021.07 | オウンドメディアのサイト制作</p>
                 </div>
-                <div v-if="expand">
-                    <div class="main__carrerItem">
-                        <div class="main__carrerItemSummary">
-                            <p>2021.06～2021.07 | オウンドメディアのサイト制作</p>
-                        </div>
-                        <div class="main__carrerItemDetail">
-                            <p>タクシードライバーのサイト制作を行いました。<br>作成されたコードの修正やWordPressを用いた記事作成、XDで作成されたデザインを基にしたコーディングなどを担当しました。<br>環境：Windows<br>使用言語：HTML、CSS、JavaScript、PHP<br>使用ツール：Visual Sudio Code、XAMPP、WordPress、XD、SourceTreeなど</p>
-                        </div>
+                <div class="main__carrerItemDetail">
+                    <p>タクシードライバーのサイト制作を行いました。<br>作成されたコードの修正やWordPressを用いた記事作成、XDで作成されたデザインを基にしたコーディングなどを担当しました。<br>環境：Windows<br>使用言語：HTML、CSS、JavaScript、PHP<br>使用ツール：Visual Sudio Code、XAMPP、WordPress、XD、SourceTreeなど</p>
+                </div>
+                </div>
+                <div class="main__carrerItem">
+                    <div class="main__carrerItemSummary">
+                        <p>2020.12～2021.06 | 新入社員研修のJava講師</p>
                     </div>
-                    <div class="main__carrerItem">
-                        <div class="main__carrerItemSummary">
-                            <p>2020.12～2021.06 | 新入社員研修のJava講師</p>
-                        </div>
-                        <div class="main__carrerItemDetail">
-                            <p>新入社員研修でサポート講師としてJavaの基礎(演算、メソッド、オブジェクト指向など)の学習サポートやServlet/jspを用いた管理なアプリケーション開発(ログイン、登録機能などが備わったもの)の指導を担当しました。<br>Zoomでのリモート研修で直接的な指導が難しかったため、初学者が理解しやすいよう資料を作成して説明したり個別の質問対応に応じたりして受講生のサポートを行っていました。<br>初学者が躓きやすいポイントを押さえて丁寧な説明を行うことを心掛けながら指導にあたりました。<br>環境：Windows<br>使用言語：Java、Servlet/jsp、MySQL<br>使用ツール：Ecripse</p>
-                        </div>
+                    <div class="main__carrerItemDetail">
+                        <p>新入社員研修でサポート講師としてJavaの基礎(演算、メソッド、オブジェクト指向など)の学習サポートやServlet/jspを用いた管理なアプリケーション開発(ログイン、登録機能などが備わったもの)の指導を担当しました。<br>Zoomでのリモート研修で直接的な指導が難しかったため、初学者が理解しやすいよう資料を作成して説明したり個別の質問対応に応じたりして受講生のサポートを行っていました。<br>初学者が躓きやすいポイントを押さえて丁寧な説明を行うことを心掛けながら指導にあたりました。<br>環境：Windows<br>使用言語：Java、Servlet/jsp、MySQL<br>使用ツール：Ecripse</p>
                     </div>
-                    <div class="main__carrerItem">
-                        <div class="main__carrerItemSummary">
-                            <p>2020.12 | 株式会社クリエイティブリソースインスティチュートに入社</p>
-                        </div>
-                        <div class="main__carrerItemDetail">
-                            <p>Web制作の案件を多く扱っている点や社内勉強会のカリキュラムが豊富な点に<br>興味をもち、入社しました。</p>
-                        </div>
+                </div>
+                <div class="main__carrerItem">
+                    <div class="main__carrerItemSummary">
+                        <p>2020.12 | 株式会社クリエイティブリソースインスティチュートに入社</p>
                     </div>
-                    <div class="main__carrerItem">
-                        <div class="main__carrerItemSummary">
-                            <p>2020.04~2020.12 | 結婚を機にキャリアチェンジ</p>
-                        </div>
-                        <div class="main__carrerItemDetail">
-                            <p>職業訓練校で半年ほどJavaやHTML、CSS、Pythonなどの基礎について学びました。<br>実習ではデータベースと連携して社員のログインや登録機能などを備えたアプリケーションをチームで開発しました。<br>常にチーム間で進捗を把握しながら開発を進めていきました。<br>また、今後のスキルに活かせるようITパスポートやWebクリエイターの資格取得にも励みました。<br>環境：Windwos<br>使用言語：Java、Servlet/jsp、VBA、PHP、HTML、CSS、Python<br>使用ツール：Ecripse、MySQLなど</p>
-                        </div>
+                    <div class="main__carrerItemDetail">
+                        <p>Web制作の案件を多く扱っている点や社内勉強会のカリキュラムが豊富な点に<br>興味をもち、入社しました。</p>
                     </div>
-                    <div class="main__carrerItem">
-                        <div class="main__carrerItemSummary">
-                            <p>2017.04～2020.03 | 大学卒業後、保育士として働く</p>
-                        </div>
-                        <div class="main__carrerItemDetail">
-                            <p>地元である静岡市の公立保育園で正規職員として勤務していました。<br>0歳・1歳、2歳、4歳と幅広い年齢のクラスの担任を務めていました。<br>常に子どもや保護者の気持ちに寄り添ったコミュニケーションや保育者間での細かな連携を心がけていました。<br>子どもの命を預かる仕事なので常に責任感をもって保育を行っていました。<br>また、日々の保育と並行して指導計画やクラスだよりの作成、行事や教材準備などの作業も進めていました。<br>業務量が多かったため、仕事一つひとつの進捗状況を把握して期限内に完了することを意識していました。</p>
-                        </div> 
+                </div>
+                <div class="main__carrerItem">
+                    <div class="main__carrerItemSummary">
+                        <p>2020.04~2020.12 | 結婚を機にキャリアチェンジ</p>
                     </div>
-                    <div class="main__moreInfoButton" @click="close">
-                        <p>閉じる</p>
+                    <div class="main__carrerItemDetail">
+                        <p>職業訓練校で半年ほどJavaやHTML、CSS、Pythonなどの基礎について学びました。<br>実習ではデータベースと連携して社員のログインや登録機能などを備えたアプリケーションをチームで開発しました。<br>常にチーム間で進捗を把握しながら開発を進めていきました。<br>また、今後のスキルに活かせるようITパスポートやWebクリエイターの資格取得にも励みました。<br>環境：Windwos<br>使用言語：Java、Servlet/jsp、VBA、PHP、HTML、CSS、Python<br>使用ツール：Ecripse、MySQLなど</p>
+                    </div>
+                </div>
+                <div class="main__carrerItem">
+                    <div class="main__carrerItemSummary">
+                        <p>2017.04～2020.03 | 大学卒業後、保育士として働く</p>
+                    </div>
+                    <div class="main__carrerItemDetail">
+                        <p>地元である静岡市の公立保育園で正規職員として勤務していました。<br>0歳・1歳、2歳、4歳と幅広い年齢のクラスの担任を務めていました。<br>常に子どもや保護者の気持ちに寄り添ったコミュニケーションや保育者間での細かな連携を心がけていました。<br>子どもの命を預かる仕事なので常に責任感をもって保育を行っていました。<br>また、日々の保育と並行して指導計画やクラスだよりの作成、行事や教材準備などの作業も進めていました。<br>業務量が多かったため、仕事一つひとつの進捗状況を把握して期限内に完了することを意識していました。</p>
                     </div> 
-                </div>             
+                </div>              
             </div>
             <div class="main__skills">
                 <div class="main__title">
                     <h3>Skills</h3>
                 </div>
-                <!-- <div class="main__skillsList--wrap">
+                <div class="main__skillsList--wrap">
                     <ul class="main__skillsListItem">
                         <li>HTML/CSS<br>デザインに沿った静的ページのコーディング、CSSアニメーション（調べながらであれば可）</li>
                         <li>WordPressを使用したwebページ制作(PHP)<br>インストールおよび初期設定、既存のページに追加するページ作成</li>
@@ -96,52 +88,15 @@
                         <li>Excel<br>資料作成（計算、関数など）</li>
                         <li>PowerPoint<br>スライド作成（アニメーション付け可）</li>
                     </ul>
-                </div>            -->
-                <div class="main__skillsList--accordion">
-                    <AccordionMenu>
-                        <div slot="title">タイトル</div>
-                        <div class="main__skillsList--content" slot="content">
-                            <p>ここに内容</p>
-                        </div>
-                    </AccordionMenu>
-                    <AccordionMenu>
-                        <div slot="title">タイトル</div>
-                        <div class="main__skillsList--content" slot="content">
-                            <p>ここに内容</p>
-                        </div>
-                    </AccordionMenu>
-                    <AccordionMenu>
-                        <div slot="title">タイトル</div>
-                        <div class="main__skillsList--content" slot="content">
-                            <p>ここに内容</p>
-                        </div>
-                    </AccordionMenu>
-                </div>
+                </div>           
             </div>
         </main>
 </template>
 
 <script>
-import AccordionMenu from "@/components/Accordion"
 
 export default {
   name: 'MyProfile',
-  components: {
-    AccordionMenu,
-  },
-  data(){
-    return{
-        expand:false
-    }
-  },
-  methods:{
-    open: function(){
-        this.expand = true
-    },
-    close: function(){
-        this.expand = false
-    }
-  }
 }
 
 </script>
@@ -373,39 +328,6 @@ export default {
             }
         }
     }
-    &__moreInfoButton{
-        margin: 0 auto 100px;
-        text-align: center;
-        cursor: pointer;
-        @include mq('max','md') {
-        } 
-        p{
-            position: relative;
-            display: inline-block;
-            text-decoration: none;
-            @include mq('max','md') {
-            }
-            &:after{
-                position: absolute;
-                bottom: -4px;
-                left: 0;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background: #333;
-                transform: scale(0, 1);
-                transform-origin: left top;
-                transition: transform .3s;
-                @include mq('max','md') {
-                } 
-            }
-            &:hover:after {
-                transform: scale(1, 1);
-                @include mq('max','md') {
-                }
-            }
-        }
-    }
     &__skills{
         width: 85%;
         margin: 0 auto;
@@ -413,9 +335,33 @@ export default {
         } 
     }
     &__skillsList{
-        &--Accordion{
-            
+        &--wrap{
+            text-align: center;
+            @include mq('max','md') {
+            } 
         }
+    }
+    &__skillsListItem{
+        font: normal 15px sans-serif;
+        color: #555;
+        text-align: left;
+        display: inline-block;
+        @include mq('max','md') {
+            width: 95%;
+            padding-top: 0;
+        }
+        li{
+            list-style-type: none;
+            background: url(../assets/images/check.png) left/40px no-repeat;
+            padding-left: 60px;
+            @include mq('max','md') {
+                font-size: 10px;
+                background-size: 20px;
+                padding-left: 30px;
+            }
+        }
+        @include mq('max','md') {
+        } 
     }
 }
 </style>
