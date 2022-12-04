@@ -99,21 +99,45 @@
                 </div>            -->
                 <div class="main__skillsList--accordion">
                     <AccordionMenu>
-                        <div slot="title">タイトル</div>
+                        <div slot="title">HTML/CSS</div>
                         <div class="main__skillsList--content" slot="content">
-                            <p>ここに内容</p>
+                            <p>デザインに沿った静的ページのコーディング、CSSアニメーション（調べながらであれば可）</p>
                         </div>
                     </AccordionMenu>
                     <AccordionMenu>
-                        <div slot="title">タイトル</div>
+                        <div slot="title">WordPressを使用したwebページ制作(PHP)</div>
                         <div class="main__skillsList--content" slot="content">
-                            <p>ここに内容</p>
+                            <p>インストールおよび初期設定、既存のページに追加するページ作成</p>
                         </div>
                     </AccordionMenu>
                     <AccordionMenu>
-                        <div slot="title">タイトル</div>
+                        <div slot="title">Java(Servlet/jsp)</div>
                         <div class="main__skillsList--content" slot="content">
-                            <p>ここに内容</p>
+                            <p>データベースを用いた簡易なアプリケーションの作成、設計図を見ながらのコーディング</p>
+                        </div>
+                    </AccordionMenu>
+                    <AccordionMenu>
+                        <div slot="title">SQL</div>
+                        <div class="main__skillsList--content" slot="content">
+                            <p>コードの内容理解、データベース作成（調べながらであれば可）</p>
+                        </div>
+                    </AccordionMenu>
+                    <AccordionMenu>
+                        <div slot="title">Word</div>
+                        <div class="main__skillsList--content" slot="content">
+                            <p>書類作成（画像や表の挿入などは可）</p>
+                        </div>
+                    </AccordionMenu>
+                    <AccordionMenu>
+                        <div slot="title">Excel</div>
+                        <div class="main__skillsList--content" slot="content">
+                            <p>資料作成（計算・関数の挿入、グラフやチャートの挿入などは可）</p>
+                        </div>
+                    </AccordionMenu>
+                    <AccordionMenu>
+                        <div slot="title">PowerPoint</div>
+                        <div class="main__skillsList--content" slot="content">
+                            <p>スライド作成（アニメーション付け可）</p>
                         </div>
                     </AccordionMenu>
                 </div>

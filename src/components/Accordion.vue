@@ -1,7 +1,7 @@
 //Accordion.vue
 <template>
     <div class="accordion">
-    <div class="title" @click="open()">
+    <div class="title" :class="{'open':isOpen}" @click="open()">
         <slot name="title"></slot>
         <transition name="rotate" mode="out-in">
         <i class="fas fa-chevron-up" v-if="isOpen" key="rotate1"></i>
@@ -95,7 +95,7 @@ export default {
     padding: 0 15px;
     margin-bottom: 10px;
 }
-.isOpen{
+.open{
     &:after{
         content: "";
         position: absolute;
