@@ -2,14 +2,16 @@
 <template>
     <div class="works">
         <MyHeader/>
-    <main class="main">
-        <div class="main__title">
-            <h2>WORKS</h2>
-        </div>
-        <ModalItem :modalItems="modalItems[0]" />
-        <ModalItem :modalItems="modalItems[1]" />
-        <ModalItem :modalItems="modalItems[2]" />
-    </main>
+        <main class="works">
+            <div class="works__title">
+                <h2>WORKS</h2>
+                <p>個人で作成した物や会社のカリキュラムで作成したWebサイトをご紹介します。</p>
+            </div>
+            <ModalItem :modalItems="modalItems[0]" />
+            <ModalItem :modalItems="modalItems[1]" />
+            <ModalItem :modalItems="modalItems[2]" />
+            <div class="works__hoverText">Webサイトを見る</div>
+        </main>
         <MyFooter/>
     </div>
 </template>
@@ -55,11 +57,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main{
+.works{
     &__title{
         text-align: center;
         h2{
-            font: normal 30px sans-serif;
+            font-size: 30px;
             @include mq('max','md') {
                 margin-left: 5px;
                 padding: 5px;
@@ -67,11 +69,11 @@ export default {
             }
         }
         p{
-            font: normal 20px sans-serif;
+            font: normal 15px sans-serif;
             @include mq('max','md') {
                 margin: 5px;
                 padding: 5px;
-                font: normal 15px sans-serif;
+                font: normal 10px sans-serif;
             }
         }
     }

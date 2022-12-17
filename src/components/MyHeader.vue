@@ -11,7 +11,6 @@
                 <div class="header__contents--list" v-bind:class="{'is-active':open}">
                     <nav>
                         <ul>
-                            <li><router-link to="/profile">profile</router-link></li>
                             <li><router-link to="/works">Works</router-link></li>
                             <li><router-link to="/contact">Contact</router-link></li>
                         </ul>
@@ -38,13 +37,12 @@ export default {
     justify-content: space-between;
     border-bottom: 1px solid #777;
     &__logo{
-        margin-top: 10px;
-        width: 130px;
-        height: 135px;
+        width: 80px;
+        height: 80px;
         @include mq('max','md') {
             margin-top: 5px;
-            width: 65px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
         }
         a{
             display: block;
@@ -58,7 +56,7 @@ export default {
         &--button{
             img{
                 position: fixed;
-                top: 20px;
+                top: 30px;
                 right: 20px;
                 z-index: 3;
                 width: 50px;

@@ -1,13 +1,13 @@
 //ModalItem.Vue
 <template>
-    <div class="main__contents">
-        <div class="main__contents--item">
+    <div class="works__contents">
+        <div class="works__contents--item">
+            <div class="works__hoverText">Webサイトを見る</div>
             <a v-bind:href = "modalItems.modalLink"><img :src = "modalItems.modalImage" ></a>
-            <!-- <img :src = "modalItems.modalImage" >
-            <a v-bind:href = "modalItems.modalLink">webサイトを見る</a> -->
-            <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" />
+            <!-- <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" /> -->
         </div>
-        <div class="main__contents--text">
+        <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" />
+        <div class="works__contents--text">
           <ModalContents
             :modalFlg="modalFlg"
             @modal-clicked="modalFlg = $event"
@@ -38,10 +38,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main{
+.works{
     &__contents{
         width: 85%;
         margin: 10px auto 0;
+        //hover
+        // position: relative;
+        // &:hover .works__hoverText{
+        //   opacity: 1;
+        // }
+
         @include mq('max','md') {
             width: 100%;
             margin: 5px auto 0;
@@ -82,6 +88,25 @@ export default {
                 }
             }
         }
+        &__hoverText {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        transition: .3s ease-in-out;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            line-height: 1.8;
+        }
+    }
     }
 }
 </style>

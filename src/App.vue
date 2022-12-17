@@ -1,3 +1,4 @@
+//App.vue
 <template>
   <div id="app">
     <router-view/>
@@ -17,11 +18,11 @@ export default {
     @keyframes main {
         0% {
             opacity: 0;
-            transition-duration: 0.5s;
+            transition-duration: .7s;
         }
         100% {
             opacity: 1;
-            transition-duration: 0.5s;
+            transition-duration: 0.9s;
         }
     }
 </style>

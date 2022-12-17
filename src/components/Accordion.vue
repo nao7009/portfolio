@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 @keyframes open {
   0% {
     opacity: 0;
@@ -65,6 +66,8 @@ export default {
 }
 .title {
   margin-bottom: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
   background-color: #728BA1;
   padding: 15px;
   border-radius: 5px;
