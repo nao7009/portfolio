@@ -471,7 +471,7 @@ export default {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(100px);
     transition-duration:.7s;
   }
   100% {

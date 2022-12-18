@@ -4,7 +4,7 @@
         <MyHeader/>
         <main class="main">
             <div class="main__title">
-                <h2>CONTACT</h2>
+                <h2>Contact</h2>
             </div>
             <div class="main__contents">
                 <div class="main__contents--form">
@@ -35,7 +35,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th><label for="remarks">備考：</label></th>
+                                <th><label for="remarks">メッセージ本文：</label></th>
                                 <td><textarea name="remarks"></textarea></td>
                             </tr>
                             <th></th>
@@ -71,7 +71,7 @@ export default {
     &__title{
         text-align: center;
         h2{
-            font: normal 30px sans-serif;
+            font-size: 30px;
             @include mq('max','md') {
                 margin-left: 5px;
                 padding: 5px;
@@ -125,8 +125,8 @@ export default {
             }
             textarea{
                 resize: none;
-                width: 300px;
-                height: 150px;
+                width: 500px;
+                height: 300px;
                 border-radius: 10px;
                 @include mq('max','md') {
                     font: normal 10px sans-serif;
