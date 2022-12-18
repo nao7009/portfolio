@@ -2,7 +2,7 @@
 <template>
   <div class="modal-wrap" :class="{ 'is-open': modalSwitch }">
     <div class="modal">
-      <p class="modal-ttl">{{ modalTtl }}</p>
+      <h2 class="modal-ttl">{{ modalTtl }}</h2>
       <div class="modal-content">
         <p>{{ modalContent }}</p>
       </div>
@@ -94,7 +94,7 @@ export default {
     transition: opacity 0.3s, visibility 0.3s;
   }
   &-close {
-    background: #1b58a6;
+    background-color: #666;
     color: #fff;
     font-size: 15px;
     border: none;
@@ -108,6 +108,7 @@ export default {
   }
   &-ttl {
     font-size: 20px;
+    text-align: center;
   }
   &-content {
     margin-bottom: 30px;

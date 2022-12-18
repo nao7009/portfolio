@@ -5,12 +5,11 @@
         <main class="works">
             <div class="works__title">
                 <h2>WORKS</h2>
-                <p>個人で作成した物や会社のカリキュラムで作成したWebサイトをご紹介します。</p>
+                <p>個人で作成した物や会社のカリキュラムで作成したWebサイトをご紹介します。<br>画像をクリックするとサイトを見ることができます。</p>
             </div>
             <ModalItem :modalItems="modalItems[0]" />
             <ModalItem :modalItems="modalItems[1]" />
             <ModalItem :modalItems="modalItems[2]" />
-            <div class="works__hoverText">Webサイトを見る</div>
         </main>
         <MyFooter/>
     </div>
@@ -77,213 +76,213 @@ export default {
             }
         }
     }
-    &__contents{
-        width: 85%;
-        margin: 10px auto 0;
-        @include mq('max','md') {
-            width: 100%;
-            margin: 5px auto 0;
-        }
+    // &__contents{
+    //     width: 85%;
+    //     margin: 10px auto 0;
+    //     @include mq('max','md') {
+    //         width: 100%;
+    //         margin: 5px auto 0;
+    //     }
  
-        &--item01{
-            margin: 30px auto;
-            width: 600px;
-            height: 350px;
-            position: relative;
-            display: block; /*モーダルウィンドウ*/
-            cursor: pointer;
-            @include mq('max','md') {
-                margin: 15px auto;
-                width: 300px;
-                height: 175px;            
-            }
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            p{
-                color: #fff;
-                background-color: #aaa;
-                width: 500px;
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                padding: 0;
-                margin: 0;
-                font: normal 18px sans-serif;
-                @include mq('max','md') {
-                    width: 250px;
-                    font: normal 12px sans-serif;
-                }
-            }
-        }
-        &--text01{
-            display: none;
-            position: fixed;
-            height:300px;
-            width: 600px;
-            padding: 10px 20px;
-            background: #ddd;
-            overflow-y: auto;
-            border-radius: 1em;
-            z-index: 100;
-            p{
-                font: normal 18px sans-serif;
-                color: #333;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-            }
-            a{
-                margin: 20px;
-                font: normal 18px sans-serif;
-                color: #00f;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-                &:hover{
-                    background-color: #999;
-                }
-            }
-        }
-        &--item02{
-            margin: 30px auto;
-            width: 600px;
-            height: 350px;
-            position: relative;
-            display: block; /*モーダルウィンドウ*/
-            cursor: pointer;
-            @include mq('max','md') {
-                margin: 15px auto;
-                width: 300px;
-                height: 175px;            
-            }
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            p{
-                color: #fff;
-                background-color: #aaa;
-                width: 500px;
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                padding: 0;
-                margin: 0;
-                font: normal 18px sans-serif;
-                @include mq('max','md') {
-                    width: 250px;
-                    font: normal 12px sans-serif;
-                }
-            }
-        }
-        &--text02{
-            display: none;
-            position: fixed;
-            height:300px;
-            width: 600px;
-            padding: 10px 20px;
-            background: #ddd;
-            overflow-y: auto;
-            border-radius: 1em;
-            z-index: 100;
-            p{
-                font: normal 18px sans-serif;
-                color: #333;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-            }
-            a{
-                margin: 20px;
-                font: normal 18px sans-serif;
-                color: #00f;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-                &:hover{
-                    background-color: #999;
-                }
-            }
-        }
-        &--item03{
-            margin: 30px auto;
-            width: 600px;
-            height: 350px;
-            position: relative;
-            display: block; /*モーダルウィンドウ*/
-            cursor: pointer;
-            @include mq('max','md') {
-                margin: 15px auto;
-                width: 300px;
-                height: 175px;            
-            }
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            p{
-                color: #fff;
-                background-color: #aaa;
-                width: 500px;
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                padding: 0;
-                margin: 0;
-                font: normal 18px sans-serif;
-                @include mq('max','md') {
-                    width: 250px;
-                    font: normal 12px sans-serif;
-                }
-            }
-        }
-        &--text03{
-            display: none;
-            position: fixed;
-            height:300px;
-            width: 600px;
-            padding: 10px 20px;
-            background: #ddd;
-            overflow-y: auto;
-            border-radius: 1em;
-            z-index: 100;
-            p{
-                font: normal 18px sans-serif;
-                color: #333;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-            }
-            a{
-                margin: 20px;
-                font: normal 18px sans-serif;
-                color: #00f;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-                &:hover{
-                    background-color: #999;
-                }
-            }
-        }
-        &--overlay{ /*背景*/
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 120%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 99;
-        }
-    }
+    //     &--item01{
+    //         margin: 30px auto;
+    //         width: 600px;
+    //         height: 350px;
+    //         position: relative;
+    //         display: block; /*モーダルウィンドウ*/
+    //         cursor: pointer;
+    //         @include mq('max','md') {
+    //             margin: 15px auto;
+    //             width: 300px;
+    //             height: 175px;            
+    //         }
+    //         img{
+    //             width: 100%;
+    //             height: 100%;
+    //         }
+    //         p{
+    //             color: #fff;
+    //             background-color: #aaa;
+    //             width: 500px;
+    //             text-align: center;
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate(-50%,-50%);
+    //             padding: 0;
+    //             margin: 0;
+    //             font: normal 18px sans-serif;
+    //             @include mq('max','md') {
+    //                 width: 250px;
+    //                 font: normal 12px sans-serif;
+    //             }
+    //         }
+    //     }
+    //     &--text01{
+    //         display: none;
+    //         position: fixed;
+    //         height:300px;
+    //         width: 600px;
+    //         padding: 10px 20px;
+    //         background: #ddd;
+    //         overflow-y: auto;
+    //         border-radius: 1em;
+    //         z-index: 100;
+    //         p{
+    //             font: normal 18px sans-serif;
+    //             color: #333;
+    //             @include mq('max','md') {
+    //                 font: normal 15px sans-serif;
+    //             }
+    //         }
+    //         a{
+    //             margin: 20px;
+    //             font: normal 18px sans-serif;
+    //             color: #00f;
+    //             @include mq('max','md') {
+    //                 font: normal 15px sans-serif;
+    //             }
+    //             &:hover{
+    //                 background-color: #999;
+    //             }
+    //         }
+    //     }
+    //     &--item02{
+    //         margin: 30px auto;
+    //         width: 600px;
+    //         height: 350px;
+    //         position: relative;
+    //         display: block; /*モーダルウィンドウ*/
+    //         cursor: pointer;
+    //         @include mq('max','md') {
+    //             margin: 15px auto;
+    //             width: 300px;
+    //             height: 175px;            
+    //         }
+    //         img{
+    //             width: 100%;
+    //             height: 100%;
+    //         }
+    //         p{
+    //             color: #fff;
+    //             background-color: #aaa;
+    //             width: 500px;
+    //             text-align: center;
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate(-50%,-50%);
+    //             padding: 0;
+    //             margin: 0;
+    //             font: normal 18px sans-serif;
+    //             @include mq('max','md') {
+    //                 width: 250px;
+    //                 font: normal 12px sans-serif;
+    //             }
+    //         }
+    //     }
+    //     &--text02{
+    //         display: none;
+    //         position: fixed;
+    //         height:300px;
+    //         width: 600px;
+    //         padding: 10px 20px;
+    //         background: #ddd;
+    //         overflow-y: auto;
+    //         border-radius: 1em;
+    //         z-index: 100;
+    //         p{
+    //             font: normal 18px sans-serif;
+    //             color: #333;
+    //             @include mq('max','md') {
+    //                 font: normal 15px sans-serif;
+    //             }
+    //         }
+    //         a{
+    //             margin: 20px;
+    //             font: normal 18px sans-serif;
+    //             color: #00f;
+    //             @include mq('max','md') {
+    //                 font: normal 15px sans-serif;
+    //             }
+    //             &:hover{
+    //                 background-color: #999;
+    //             }
+    //         }
+    //     }
+    //     &--item03{
+    //         margin: 30px auto;
+    //         width: 600px;
+    //         height: 350px;
+    //         position: relative;
+    //         display: block; /*モーダルウィンドウ*/
+    //         cursor: pointer;
+    //         @include mq('max','md') {
+    //             margin: 15px auto;
+    //             width: 300px;
+    //             height: 175px;            
+    //         }
+    //         img{
+    //             width: 100%;
+    //             height: 100%;
+    //         }
+    //         p{
+    //             color: #fff;
+    //             background-color: #aaa;
+    //             width: 500px;
+    //             text-align: center;
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate(-50%,-50%);
+    //             padding: 0;
+    //             margin: 0;
+    //             font: normal 18px sans-serif;
+    //             @include mq('max','md') {
+    //                 width: 250px;
+    //                 font: normal 12px sans-serif;
+    //             }
+    //         }
+    //     }
+    //     &--text03{
+    //         display: none;
+    //         position: fixed;
+    //         height:300px;
+    //         width: 600px;
+    //         padding: 10px 20px;
+    //         background: #ddd;
+    //         overflow-y: auto;
+    //         border-radius: 1em;
+    //         z-index: 100;
+    //         p{
+    //             font: normal 18px sans-serif;
+    //             color: #333;
+    //             @include mq('max','md') {
+    //                 font: normal 15px sans-serif;
+    //             }
+    //         }
+    //         a{
+    //             margin: 20px;
+    //             font: normal 18px sans-serif;
+    //             color: #00f;
+    //             @include mq('max','md') {
+    //                 font: normal 15px sans-serif;
+    //             }
+    //             &:hover{
+    //                 background-color: #999;
+    //             }
+    //         }
+    //     }
+    //     &--overlay{ /*背景*/
+    //         display: none;
+    //         position: fixed;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 120%;
+    //         background-color: rgba(0, 0, 0, 0.5);
+    //         z-index: 99;
+    //     }
+    // }
 }
 </style>
