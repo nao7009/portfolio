@@ -376,12 +376,11 @@ body, header, footer, main, section, div, p, li, dt, dd, a {
         padding: 5px; }
         .footer__contents--sns ul li a {
           display: block;
-          margin: 5px;
-          padding: 5px; }
-          @media screen and (max-width: 768px) {
-            .footer__contents--sns ul li a img {
-              width: 20px;
-              height: 20px; } }
+          width: 50px;
+          height: 50px; }
+          .footer__contents--sns ul li a img {
+            width: 100%;
+            height: 100%; }
     .footer__contents--copy p {
       font: normal 12px sans-serif;
       text-align: center; }
