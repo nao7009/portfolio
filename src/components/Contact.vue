@@ -2,12 +2,12 @@
 <template>
     <div class="contact">
         <MyHeader/>
-        <main class="main">
-            <div class="main__title">
+        <main class="contact">
+            <div class="contact__title">
                 <h2>Contact</h2>
             </div>
-            <div class="main__contents">
-                <div class="main__contents--form">
+            <div class="contact__contents">
+                <div class="contact__form">
                     <p>お問い合わせはこちらからお願いします。</p>
                     <form action="" method="post">
                         <table>
@@ -40,7 +40,7 @@
                             </tr>
                             <th></th>
                             <td>
-                                <input type="submit" name="button" value="送信">
+                                <input type="submit" name="button" value="送信" class="button">
                             </td>
                             <tr>
                             </tr>
@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main{
+.contact{
     &__title{
         text-align: center;
         h2{
@@ -87,55 +87,63 @@ export default {
             }
         }
     }
-    &__contents{
+    &__form{
         width: 85%;
         margin: 10px auto 0;
         @include mq('max','md') {
             width: 100%;
             margin: 5px auto 0;
         }
-        &--form{
-            p{
-                text-align: center;
-                font: normal 15px sans-serif;
+        p{
+            text-align: center;
+            font: normal 15px sans-serif;
+            color: #555;
+            @include mq('max','md') {
+                font: normal 12px sans-serif;
+            }
+        }
+        table{
+            margin: 0 auto;
+            @include mq('max','md') {
+                width: 100%;
+            }
+            th, td{
+                padding: 10px;
+            }
+        }
+        th{
+            padding-right: 10px;
+            text-align: right;
+            font: normal 15px sans-serif;
+            color: #555;
+            vertical-align: top;
+            @include mq('max','md') {
+                font: normal 10px sans-serif;
                 color: #555;
-                @include mq('max','md') {
-                    font: normal 12px sans-serif;
-                }
             }
-            table{
-                margin: 0 auto;
-                @include mq('max','md') {
-                    width: 100%;
-                }
-                th, td{
-                    padding: 10px;
-                }
-            }
-            th{
-                padding-right: 10px;
-                text-align: right;
-                font: normal 15px sans-serif;
-                color: #555;
-                vertical-align: top;
-                @include mq('max','md') {
-                    font: normal 10px sans-serif;
-                    color: #555;
-                }
-            }
-            textarea{
-                resize: none;
-                width: 500px;
-                height: 300px;
-                border-radius: 10px;
-                @include mq('max','md') {
-                    font: normal 10px sans-serif;
-                    width: 150px;
-                    height: 70px;
-                }
+        }
+        textarea{
+            resize: none;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            @include mq('max','md') {
+                font: normal 10px sans-serif;
+                width: 150px;
+                height: 70px;
             }
         }
     }
+}
+.button{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    border-radius: 10%;
+    font-size: 15px;
+    background-color: #666;
+    border: none;
+    color: #fff;
 }
 
 </style>

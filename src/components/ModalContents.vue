@@ -69,6 +69,7 @@ export default {
     left: 0;
     z-index: -1;
     transition: z-index 0.3s;
+    visibility: hidden;
     &.is-open {
       z-index: 1;
       .modal {

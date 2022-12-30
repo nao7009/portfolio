@@ -40,9 +40,6 @@ export default {
         justify-content: space-between;
         border-top: 1px solid #777;
         &--sns{
-            a{
-                display: block;
-            }
             ul{
                 display: flex;
                 align-items: center;
@@ -50,8 +47,11 @@ export default {
                     margin: 5px;
                 }
                 li{
-                    display: flex;
-                    align-items: center;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    margin: 5px;
+                    padding: 5px;
                     @include mq('max','md') {
                         width: 30px;
                         height: 30px;
@@ -59,9 +59,9 @@ export default {
                         padding: 5px;
                     }
                     img{
+                        width: 100%;
+                        height: 100%;
                         @include mq('max','md') {
-                            width: 100%;
-                            height: 100%;
                         }                      
                     }
                 }
@@ -71,7 +71,7 @@ export default {
             z-index: 99;
             a{
                 display: block;
-                margin-top: 40px;
+                margin-top: 30px;
                 width: 30px;
                 height: 30px;
                 img{

@@ -25,4 +25,32 @@ export default {
             transition-duration: 0.9s;
         }
     }
+
+    .works {
+        animation: works 2s;
+        }
+    @keyframes works {
+        0% {
+            opacity: 0;
+            transition-duration: .7s;
+        }
+        100% {
+            opacity: 1;
+            transition-duration: 0.9s;
+        }
+    }
+
+    .contact {
+        animation: contact 2s;
+        }
+    @keyframes contact {
+        0% {
+            opacity: 0;
+            transition-duration: .7s;
+        }
+        100% {
+            opacity: 1;
+            transition-duration: 0.9s;
+        }
+    }
 </style>

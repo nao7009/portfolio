@@ -26,7 +26,7 @@
                             <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
                         </div>
                         <div class="main__carrerItemDetail">
-                            <p>大型案件のディレクション業務に携わり、<br>プロジェクトの進行管理や提案書作成等を担当しています。<br>ディレクターについて自身でも日々勉強中です。</p>
+                            <p>大型案件のディレクション業務に携わり、<br>バナーやLP制作の進行管理や提案書作成等を担当しています。<br>ディレクターについて自身でも日々勉強中です。</p>
                         </div>
                     </div>
                     <div class="main__carrerItem">
@@ -34,7 +34,7 @@
                             <p>2021.08～2022.09 | 官公庁システムの運用・保守</p>
                         </div>
                         <div class="main__carrerItemDetail">
-                            <p>Windows端末の緊急性の高いパッチ適用やWAF、Windowsサーバのアップデート、<br>利用機関のDNSやメールの設定変更を担当していました。<br>正確性が問われる作業だったので、常にペア間で確認を怠らずに検証やリリースを行っていました。<br>また、スケジュールを常に把握し作業が滞ることなく進められるように配慮をしていました。<br>環境：Windows、Linux<br>使用ツール：teraterm、SKYSEA、WSUS、IIS、VMware、Citrixなど</p>
+                            <p>Windows端末の緊急性の高いパッチ適用やWAF、Windowsサーバのアップデート、利用機関のDNSやメールの設定変更を担当していました。<br>正確性が問われる作業だったので、常にペア間で確認を怠らずに検証やリリースを行っていました。<br>また、スケジュールを常に把握し作業が滞ることなく進められるように配慮をしていました。<br><br>環境：Windows、Linux<br>使用ツール：teraterm、SKYSEA、WSUS、IIS、VMware、Citrixなど</p>
                         </div>
                     </div>
                     <div class="main__moreInfoButton" v-if="!expand" @click="open">
@@ -46,7 +46,7 @@
                                 <p>2021.06～2021.07 | オウンドメディアのサイト制作</p>
                             </div>
                             <div class="main__carrerItemDetail">
-                                <p>タクシードライバーのサイト制作を行いました。<br>作成されたコードの修正やWordPressを用いた記事作成、XDで作成されたデザインを基にしたコーディングなどを担当しました。<br>環境：Windows<br>使用言語：HTML、CSS、JavaScript、PHP<br>使用ツール：Visual Sudio Code、XAMPP、WordPress、XD、SourceTreeなど</p>
+                                <p>タクシードライバーのサイト制作を行いました。<br>作成されたコードの修正やWordPressを用いた記事作成、XDで作成されたデザインを基にしたコーディングなどを担当しました。<br>環境：Windows<br>使用言語：HTML、CSS、JavaScript、PHP<br><br>使用ツール：Visual Sudio Code、XAMPP、WordPress、XD、SourceTreeなど</p>
                             </div>
                         </div>
                         <div class="main__carrerItem">
@@ -54,7 +54,7 @@
                                 <p>2020.12～2021.06 | 新入社員研修のJava講師</p>
                             </div>
                             <div class="main__carrerItemDetail">
-                                <p>新入社員研修でサポート講師としてJavaの基礎(演算、メソッド、オブジェクト指向など)の学習サポートやServlet/jspを用いた管理なアプリケーション開発(ログイン、登録機能などが備わったもの)の指導を担当しました。<br>Zoomでのリモート研修で直接的な指導が難しかったため、初学者が理解しやすいよう資料を作成して説明したり個別の質問対応に応じたりして受講生のサポートを行っていました。<br>初学者が躓きやすいポイントを押さえて丁寧な説明を行うことを心掛けながら指導にあたりました。<br>環境：Windows<br>使用言語：Java、Servlet/jsp、MySQL<br>使用ツール：Ecripse</p>
+                                <p>新入社員研修でサポート講師としてJavaの基礎(演算、メソッド、オブジェクト指向など)の学習サポートやServlet/jspを用いた管理なアプリケーション開発(ログイン、登録機能などが備わったもの)の指導を担当しました。<br>Zoomでのリモート研修で直接的な指導が難しかったため、初学者が理解しやすいよう資料を作成して説明したり個別の質問対応に応じたりして受講生のサポートを行っていました。<br>初学者が躓きやすいポイントを押さえて丁寧な説明を行うことを心掛けながら指導にあたりました。<br><br>環境：Windows<br>使用言語：Java、Servlet/jsp、MySQL<br>使用ツール：Ecripse</p>
                             </div>
                         </div>
                         <div class="main__carrerItem">
@@ -70,7 +70,7 @@
                                 <p>2020.04~2020.12 | 結婚を機にキャリアチェンジ</p>
                             </div>
                             <div class="main__carrerItemDetail">
-                                <p>職業訓練校で半年ほどJavaやHTML、CSS、Pythonなどの基礎について学びました。<br>実習ではデータベースと連携して社員のログインや登録機能などを備えたアプリケーションをチームで開発しました。<br>常にチーム間で進捗を把握しながら開発を進めていきました。<br>また、今後のスキルに活かせるようITパスポートやWebクリエイターの資格取得にも励みました。<br>環境：Windwos<br>使用言語：Java、Servlet/jsp、VBA、PHP、HTML、CSS、Python<br>使用ツール：Ecripse、MySQLなど</p>
+                                <p>職業訓練校で半年ほどJavaやHTML、CSS、Pythonなどの基礎について学びました。<br>実習ではデータベースと連携して社員のログインや登録機能などを備えたアプリケーションをチームで開発しました。<br>常にチーム間で進捗を把握しながら開発を進めていきました。<br>また、今後のスキルに活かせるようITパスポートやWebクリエイターの資格取得にも励みました。<br><br>環境：Windwos<br>使用言語：Java、Servlet/jsp、VBA、PHP、HTML、CSS、Python<br>使用ツール：Ecripse、MySQLなど</p>
                             </div>
                         </div>
                         <div class="main__carrerItem">
@@ -377,6 +377,7 @@ export default {
             border-radius: 12px;
             background: #6C8783;
             font-size: 15px;
+            color: #fff;
             @include mq('max','md') {
                 margin: 0 20px 0 0;
                 padding: 10px;

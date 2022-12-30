@@ -2,7 +2,9 @@
 <template>
        <header class="header">
             <div class="header__logo">
-                <router-link to="/"><img src="../assets/images/home.png"></router-link>
+                <router-link to="/">
+                    <img src="../assets/images/logo.png">
+                </router-link>
             </div>
             <div class="header__contents">
                 <div class="header__contents--button" v-on:click="open=!open">
@@ -37,15 +39,12 @@ export default {
     justify-content: space-between;
     border-bottom: 1px solid #777;
     &__logo{
-        width: 80px;
-        height: 80px;
+        width: 95px;
+        height: 90px;
         @include mq('max','md') {
             margin-top: 5px;
-            width: 40px;
-            height: 40px;
-        }
-        a{
-            display: block;
+            width: 55px;
+            height: 50px;
         }
         img{
             width: 100%;
@@ -56,7 +55,7 @@ export default {
         &--button{
             img{
                 position: fixed;
-                top: 30px;
+                top: 40px;
                 right: 20px;
                 z-index: 3;
                 width: 50px;
@@ -65,6 +64,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 color: #fff;
+                cursor: pointer;
                 @include mq('max','md') {
                     width: 20px;
                     height: 20px;
@@ -108,7 +108,8 @@ export default {
                             padding: 5px;
                         }
                         a{
-                            font: normal 30px sans-serif;
+                            // font: normal 30px sans-serif;
+                            font-size: 30px;
                             color: #fff;
                             @include mq('max','md') {
                                 font: normal 15px sans-serif;

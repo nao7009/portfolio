@@ -68,6 +68,7 @@ export default {
   margin-bottom: 10px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
+  color: #fff;
   background-color: #728BA1;
   padding: 15px;
   border-radius: 5px;
