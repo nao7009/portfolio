@@ -1,5 +1,4 @@
 // vue.config.js
-
 module.exports = {
   outputDir: 'docs',
   assetsDir: './',
@@ -9,6 +8,12 @@ module.exports = {
       scss: {
         additionalData: `@import "@/assets/scss/_variables.scss";`
       }
+    }
+  },
+  pages: {
+    index: {
+      entry: "src/main.js",
+      title: "portfolio"   
     }
   }
 };
