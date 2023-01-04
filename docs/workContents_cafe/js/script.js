@@ -1,6 +1,6 @@
 // jQuery
 //変数
-const week = ["日","月","火","水","木","金","土"];
+const week = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const today = new Date();
 
 //月末だとずれる可能性があるため、1日固定で取得

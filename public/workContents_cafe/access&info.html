@@ -28,10 +28,10 @@
                 </div>
             </div>
         </header>
-        <main class="main">
-            <h1>access&info</h1>
-            <div class="main__contents">
-                <div class="main__contents--text">
+        <main class="infoAndAccess">
+            <h1>access & info</h1>
+            <div class="access">
+                <div class="access__text">
                     <img src="images/shoes.png">
                     <h2>access</h2>
                     <ul>
@@ -40,37 +40,35 @@
                         <li>TEL：123-4567</li>
                     </ul>
                 </div>
-                <div class="main__contents--map">
+                <div class="access__map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.659001077522!2d139.6672775!3d35.6606306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed98990ae6e1597b!2z5qCq5byP5Lya56S-44Kv44Oq44Ko44Kk44OG44Kj44OW44Oq44K944O844K544Kk44Oz44K544OG44Kj44OB44Ol44O844OI!5e0!3m2!1sja!2sjp!4v1653989478594!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="main__contents">
-                <div class="main__contents--text">
+            <div class="info">
+                <div class="info__text">
                     <img src="images/info.png">
                     <h2>info</h2>
-                    <p>営業時間</p>
-                    <p>月～金：8:00～20:00</p>
-                    <p>土・日・祝：8:00～22:00</p>
+                    <p>営業時間<br>月～金：8:00～20:00<br>土・日・祝：8:00～22:00</br>
                 </div>
-                <div class="main__contents--form">
+                <div class="info__form">
                     <p>お問い合わせは下記フォームからでも可能です。</p>
                     <form action="" method="post">
                         <table>
                             <tr>
-                                <td><label for="name">お名前（必須）：</label></td>
+                                <th><label for="name">お名前（必須）：</label></th>
                                 <td><input type="text" name="name" id="name" required></td>
                             </tr>
                             <tr>
-                                <td><label for="name">メールアドレス：</label></th>
+                                <th><label for="name">メールアドレス：</label></th>
                                 <td><input type="text" name="mail" id="mail" required></td>
                             </tr>
                             <tr>
-                                <td><label for="remarks">お問い合わせ内容：</label></td>
+                                <th><label for="remarks">お問い合わせ内容：</label></th>
                                 <td><textarea name="remarks"></textarea></td>
                             </tr>
                             <th></th>
                             <td>
-                                <input type="submit" name="button" value="送信">
+                                <input type="submit" name="button" value="送信" id="button">
                             </td>
                         </table>
                     </form>

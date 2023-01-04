@@ -1,4 +1,7 @@
 /* _variables.scss */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
 $breakpoints: (
   'sm': 340,
   'md': 768,
@@ -29,6 +32,9 @@ $breakpoints: (
   }
 }
 
-$mainColor:#EEE;
+$mainColor: #C7AA95;
+$subColor: #FDEDCF;
+$thirdColor: #fdf5e6;
 
-$lobster: 'Lobster', cursive;
+$fontType: 'Slabo 27px', serif;
+$fontType2: 'Shippori Mincho B1', serif;
