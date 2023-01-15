@@ -1,4 +1,6 @@
 /* _variables.scss */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
 $breakpoints: (
   'sm': 340,
   'md': 768,
@@ -29,4 +31,11 @@ $breakpoints: (
   }
 }
 
-$mainColor:#EEE;
+$mainColor: #FCE6DB;
+$subColor: #fffbe8;
+$linkColor: #D4EBB9;
+
+$mincho: 'Shippori Mincho B1', serif;
+
+$fontColor: #EDB2C9;
+$titleColor: #666;
