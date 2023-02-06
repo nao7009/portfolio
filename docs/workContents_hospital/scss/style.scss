@@ -180,7 +180,7 @@ h2, p{
         }
     }
     &__serviceItem{
-        // display: flex;
+        display: flex;
         @include mq('max','md') {
         }
         // li{

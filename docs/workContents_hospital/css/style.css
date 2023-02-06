@@ -164,6 +164,10 @@ h2, p {
           text-align: center;
           line-height: 1.8;
           letter-spacing: 2px; } }
+  .main__serviceItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .main__serviceImage {
     width: 250px;
     height: 150px; }

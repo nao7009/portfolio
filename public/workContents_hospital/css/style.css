@@ -98,6 +98,15 @@ h2, p {
   @media screen and (max-width: 768px) {
     .main {
       width: 100%; } }
+  .main__title h2 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 25px;
+    color: #666; }
+    @media screen and (max-width: 768px) {
+      .main__title h2 {
+        font-size: 20px; } }
   .main__kv {
     height: 430px;
     display: -webkit-box;
@@ -129,28 +138,175 @@ h2, p {
         margin-left: auto;
         margin-right: 45px;
         font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
+  .main__contents {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0; }
+  .main__contentsTitle {
+    border-bottom: 1px solid #A9A9A9; }
     @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
+      .main__contentsTitle {
+        margin: 30px auto 5px; } }
+    .main__contentsTitle h2 {
+      font-size: 20px;
+      color: #EDB2C9; }
+      @media screen and (max-width: 768px) {
+        .main__contentsTitle h2 {
+          font-size: 16px; } }
+  .main__contentsText {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fffbe8; }
+    .main__contentsText p {
+      font-size: 16px;
+      line-height: 1.2em; }
+      @media screen and (max-width: 768px) {
+        .main__contentsText p {
+          font-size: 12px; } }
+  .main__medicaltreatment {
+    width: 100%;
+    margin: 0 auto; }
+    .main__medicaltreatment p {
+      font-size: 16px;
+      line-height: 1.8em; }
+      @media screen and (max-width: 768px) {
+        .main__medicaltreatment p {
+          font-size: 12px;
+          line-height: 1.2em; } }
+    .main__medicaltreatment ul {
+      font-size: 18px;
+      line-height: 1.6em; }
+      @media screen and (max-width: 768px) {
+        .main__medicaltreatment ul {
+          font-size: 14px;
+          line-height: 1.0em; } }
+  .main__examinationtime {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; }
+    .main__examinationtime p {
+      font-size: 17px;
+      line-height: 1.8em; }
+      @media screen and (max-width: 768px) {
+        .main__examinationtime p {
+          font-size: 12px; } }
+    .main__examinationtime table, .main__examinationtime th, .main__examinationtime td {
+      border: 1px solid #666;
+      text-align: center;
+      margin-left: 20px;
+      padding: 10px;
+      font-size: 16px; }
+      @media screen and (max-width: 768px) {
+        .main__examinationtime table, .main__examinationtime th, .main__examinationtime td {
+          font-size: 12px; } }
+    .main__examinationtime th {
+      background-color: #D4EBB9; }
+  .main__medicalcheck {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px; }
+    .main__medicalcheck h3 {
+      padding-left: 20px;
+      font-size: 18px;
+      font-weight: 600; }
+    .main__medicalcheck h4 {
+      margin-top: 10px;
+      padding-left: 20px;
+      font-size: 16px;
+      line-height: 1.8em;
+      color: #f00; }
+      @media screen and (max-width: 768px) {
+        .main__medicalcheck h4 {
+          font-size: 12px;
+          line-height: 1.8em; } }
+    .main__medicalcheck p {
+      font-size: 16px;
+      line-height: 1.2em; }
+      @media screen and (max-width: 768px) {
+        .main__medicalcheck p {
+          font-size: 12px;
+          line-height: 1.2em; } }
+    .main__medicalcheck a {
+      color: #00f; }
+      .main__medicalcheck a:hover {
+        background: #F2D2CE; }
+    .main__medicalcheck table, .main__medicalcheck th, .main__medicalcheck td {
+      border: 1px solid #A9A9A9;
+      text-align: center;
+      margin-left: 20px;
+      padding: 10px;
+      font-size: 16px;
+      color: #666; }
+      @media screen and (max-width: 768px) {
+        .main__medicalcheck table, .main__medicalcheck th, .main__medicalcheck td {
+          padding: 5px;
+          font-size: 12px; } }
+    .main__medicalcheck th {
+      background-color: #D4EBB9; }
+  .main__newsItem {
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #fffbe8; }
+    .main__newsItem h3 {
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 1.8em;
+      border-bottom: 1px dashed #A9A9A9;
+      color: #666; }
+      @media screen and (max-width: 768px) {
+        .main__newsItem h3 {
+          font-size: 16px; } }
+    .main__newsItem p {
+      font-size: 16px;
+      line-height: 1.2em; }
+      @media screen and (max-width: 768px) {
+        .main__newsItem p {
+          font-size: 12px; } }
+    .main__newsItem h4 {
+      padding-left: 20px;
+      font-size: 16px;
+      color: #f00; }
+      @media screen and (max-width: 768px) {
+        .main__newsItem h4 {
+          font-size: 12px; } }
+  .main__consultation {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px; }
+    .main__consultation h2 {
+      font-size: 18px;
+      padding-left: 20px;
+      color: #666; }
+      @media screen and (max-width: 768px) {
+        .main__consultation h2 {
+          font-size: 16px; } }
+    @media screen and (max-width: 768px) {
+      .main__consultation ul {
+        font-size: 15px; } }
+
+.service {
+  margin: 10px auto 100px;
+  padding: 20px 20px 100px;
+  background-color: #fffbe8; }
+  @media screen and (max-width: 768px) {
+    .service {
+      width: 100%;
+      margin: 5px auto 50px;
+      padding: 10px 10px 50px; } }
+  .service__message {
     margin-bottom: 60px; }
     @media screen and (max-width: 768px) {
-      .main__serviceMessage {
+      .service__message {
         margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
+    .service__message h2 {
       font-size: 20px;
       text-align: center;
       color: #666; }
       @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
+        .service__message h2 {
           font-size: 16px; } }
-    .main__serviceMessage p {
+    .service__message p {
       width: 67%;
       margin: 10px auto 0;
       font-size: 16px;
@@ -158,2453 +314,163 @@ h2, p {
       line-height: 2.2;
       letter-spacing: 2px; }
       @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
+        .service__message p {
           width: 100%;
           font-size: 12px;
           text-align: center;
           line-height: 1.8;
           letter-spacing: 2px; } }
-  .main__serviceImage {
-    width: 250px;
-    height: 150px; }
-    .main__serviceImage img {
-      width: 100%; }
-      @media screen and (max-width: 768px) {
-        .main__serviceImage img {
-          width: 100%; } }
-  .main__serviceText {
+  .service__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .service__columnItems {
     text-align: center;
-    border: 1px solid #666; }
+    border: 1px solid #A9A9A9; }
+    .service__columnItems :last-child {
+      background-color: #00f; }
     @media screen and (max-width: 768px) {
-      .main__serviceText {
+      .service__columnItems {
         margin: 5px;
         padding: 5px; } }
-    .main__serviceText h3 {
+    .service__columnItems img {
+      width: 250px;
+      height: 150px; }
+    .service__columnItems h3 {
       margin: 50px 0 30px 0;
       font-size: 18px;
       text-align: center; }
       @media screen and (max-width: 768px) {
-        .main__serviceText h3 {
+        .service__columnItems h3 {
           margin: 15px 0 15px 0;
           font-size: 15px;
           text-align: center; } }
-    .main__serviceText p {
+    .service__columnItems p {
       font-size: 15px; }
       @media screen and (max-width: 768px) {
-        .main__serviceText p {
+        .service__columnItems p {
           font-size: 11px;
           margin: 5px;
           padding: 5px; } }
-    .main__serviceText a {
+    .service__columnItems a {
       display: block; }
       @media screen and (max-width: 768px) {
-        .main__serviceText a {
+        .service__columnItems a {
           font-size: 11px; } }
-      .main__serviceText a:hover {
-        background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
+      .service__columnItems a:hover {
+        background: #F2D2CE; }
 
-/**********************************
- medicaltreatment.html
-**********************************/
-.main {
+.news {
   width: 85%;
-  margin: 0 auto;
-  background-color: #fffbe8; }
+  /*固定幅*/
+  margin: 10px auto;
+  padding: 0 20px; }
   @media screen and (max-width: 768px) {
-    .main {
-      width: 100%; } }
-  .main__kv {
-    height: 430px;
+    .news {
+      width: 100%;
+      padding: 0 5px; } }
+  .news__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .news__day {
+    width: 265px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fff;
-    padding-left: 0; }
+    margin-right: 32px; }
     @media screen and (max-width: 768px) {
-      .main__kv {
-        width: 100%;
-        height: 250px;
+      .news__day {
+        width: 90px;
+        margin-right: 5px; } }
+  .news__data {
+    line-height: 1.8; }
+    @media screen and (max-width: 768px) {
+      .news__data {
+        line-height: 1.2;
+        margin-left: 5px; } }
+  .news__more {
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      .news__more {
         font-size: 12px; } }
-  .main__summery h2 {
-    font-size: 20px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery h2 {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__summery p {
-    font-size: 15px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery p {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
-    @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .main__serviceMessage {
-        margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
-      font-size: 20px;
-      text-align: center; }
+    .news__more a:hover {
+      background: #F2D2CE; }
       @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
-          font-size: 16px; } }
-    .main__serviceMessage p {
-      width: 67%;
-      margin: 10px auto 0;
-      font-size: 16px;
-      text-align: center;
-      line-height: 2.2;
-      letter-spacing: 2px; }
+        .news__more a:hover {
+          font-size: 10px; } }
+  .news__title {
+    margin-bottom: 16px;
+    font-size: 20px; }
+    .news__title h2 {
+      font-size: 25px;
+      padding-left: 20px; }
       @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
-          width: 100%;
+        .news__title h2 {
+          font-size: 20px; } }
+    @media screen and (max-width: 768px) {
+      .news__title {
+        margin-bottom: 8px;
+        font-size: 16px; } }
+  .news__list {
+    padding: 20px 12px; }
+    @media screen and (max-width: 768px) {
+      .news__list {
+        padding: 10px 5px; } }
+    .news__list li {
+      border-bottom: 1px solid #A9A9A9; }
+      @media screen and (max-width: 768px) {
+        .news__list li {
           font-size: 12px;
-          text-align: center;
-          line-height: 1.8;
-          letter-spacing: 2px; } }
-  .main__serviceList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .main__serviceList li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin-right: 2%;
-      border: 1px solid #a7b7bf;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceList li {
           margin: 5px;
-          padding: 5px; } }
-      .main__serviceList li img {
-        width: 100%;
-        height: 310px;
+          padding: 10px; } }
+      .news__list li:first-child {
+        border-top: 1px solid #A9A9A9; }
+      .news__list li a {
+        display: block;
+        padding: 30px 10px;
         display: block; }
         @media screen and (max-width: 768px) {
-          .main__serviceList li img {
-            width: 100%;
-            height: 135px; } }
-      .main__serviceList li h3 {
-        margin: 50px 0 30px 0;
-        font-size: 18px;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li h3 {
-            margin: 15px 0 15px 0;
-            font-size: 15px;
-            text-align: center; } }
-      .main__serviceList li p {
-        font-size: 15px; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li p {
-            font-size: 11px;
+          .news__list li a {
             margin: 5px;
             padding: 5px; } }
-      .main__serviceList li a {
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li a {
-            font-size: 11px; } }
-        .main__serviceList li a:hover {
-          background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
+        .news__list li a:hover {
+          background: #F2D2CE; }
 
-/**********************************
- visitmedical.html
-**********************************/
-.main {
+.form {
   width: 85%;
-  margin: 0 auto;
-  background-color: #fffbe8; }
-  @media screen and (max-width: 768px) {
-    .main {
-      width: 100%; } }
-  .main__kv {
-    height: 430px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #fff;
-    padding-left: 0; }
-    @media screen and (max-width: 768px) {
-      .main__kv {
-        width: 100%;
-        height: 250px;
-        font-size: 12px; } }
-  .main__summery h2 {
-    font-size: 20px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery h2 {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__summery p {
-    font-size: 15px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery p {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
-    @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .main__serviceMessage {
-        margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
-      font-size: 20px;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
-          font-size: 16px; } }
-    .main__serviceMessage p {
-      width: 67%;
-      margin: 10px auto 0;
-      font-size: 16px;
-      text-align: center;
-      line-height: 2.2;
-      letter-spacing: 2px; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
-          width: 100%;
-          font-size: 12px;
-          text-align: center;
-          line-height: 1.8;
-          letter-spacing: 2px; } }
-  .main__serviceList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .main__serviceList li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin-right: 2%;
-      border: 1px solid #a7b7bf;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceList li {
-          margin: 5px;
-          padding: 5px; } }
-      .main__serviceList li img {
-        width: 100%;
-        height: 310px;
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li img {
-            width: 100%;
-            height: 135px; } }
-      .main__serviceList li h3 {
-        margin: 50px 0 30px 0;
-        font-size: 18px;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li h3 {
-            margin: 15px 0 15px 0;
-            font-size: 15px;
-            text-align: center; } }
-      .main__serviceList li p {
-        font-size: 15px; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li p {
-            font-size: 11px;
-            margin: 5px;
-            padding: 5px; } }
-      .main__serviceList li a {
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li a {
-            font-size: 11px; } }
-        .main__serviceList li a:hover {
-          background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
-
-/**********************************
- medicalcheck.html
-**********************************/
-.main {
-  width: 85%;
-  margin: 0 auto;
-  background-color: #fffbe8; }
-  @media screen and (max-width: 768px) {
-    .main {
-      width: 100%; } }
-  .main__kv {
-    height: 430px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #fff;
-    padding-left: 0; }
-    @media screen and (max-width: 768px) {
-      .main__kv {
-        width: 100%;
-        height: 250px;
-        font-size: 12px; } }
-  .main__summery h2 {
-    font-size: 20px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery h2 {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__summery p {
-    font-size: 15px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery p {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
-    @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .main__serviceMessage {
-        margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
-      font-size: 20px;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
-          font-size: 16px; } }
-    .main__serviceMessage p {
-      width: 67%;
-      margin: 10px auto 0;
-      font-size: 16px;
-      text-align: center;
-      line-height: 2.2;
-      letter-spacing: 2px; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
-          width: 100%;
-          font-size: 12px;
-          text-align: center;
-          line-height: 1.8;
-          letter-spacing: 2px; } }
-  .main__serviceList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .main__serviceList li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin-right: 2%;
-      border: 1px solid #a7b7bf;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceList li {
-          margin: 5px;
-          padding: 5px; } }
-      .main__serviceList li img {
-        width: 100%;
-        height: 310px;
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li img {
-            width: 100%;
-            height: 135px; } }
-      .main__serviceList li h3 {
-        margin: 50px 0 30px 0;
-        font-size: 18px;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li h3 {
-            margin: 15px 0 15px 0;
-            font-size: 15px;
-            text-align: center; } }
-      .main__serviceList li p {
-        font-size: 15px; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li p {
-            font-size: 11px;
-            margin: 5px;
-            padding: 5px; } }
-      .main__serviceList li a {
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li a {
-            font-size: 11px; } }
-        .main__serviceList li a:hover {
-          background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
-
-/**********************************
- news.html
-**********************************/
-.main {
-  width: 85%;
-  margin: 0 auto;
-  background-color: #fffbe8; }
-  @media screen and (max-width: 768px) {
-    .main {
-      width: 100%; } }
-  .main__kv {
-    height: 430px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #fff;
-    padding-left: 0; }
-    @media screen and (max-width: 768px) {
-      .main__kv {
-        width: 100%;
-        height: 250px;
-        font-size: 12px; } }
-  .main__summery h2 {
-    font-size: 20px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery h2 {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__summery p {
-    font-size: 15px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery p {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
-    @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .main__serviceMessage {
-        margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
-      font-size: 20px;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
-          font-size: 16px; } }
-    .main__serviceMessage p {
-      width: 67%;
-      margin: 10px auto 0;
-      font-size: 16px;
-      text-align: center;
-      line-height: 2.2;
-      letter-spacing: 2px; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
-          width: 100%;
-          font-size: 12px;
-          text-align: center;
-          line-height: 1.8;
-          letter-spacing: 2px; } }
-  .main__serviceList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .main__serviceList li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin-right: 2%;
-      border: 1px solid #a7b7bf;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceList li {
-          margin: 5px;
-          padding: 5px; } }
-      .main__serviceList li img {
-        width: 100%;
-        height: 310px;
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li img {
-            width: 100%;
-            height: 135px; } }
-      .main__serviceList li h3 {
-        margin: 50px 0 30px 0;
-        font-size: 18px;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li h3 {
-            margin: 15px 0 15px 0;
-            font-size: 15px;
-            text-align: center; } }
-      .main__serviceList li p {
-        font-size: 15px; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li p {
-            font-size: 11px;
-            margin: 5px;
-            padding: 5px; } }
-      .main__serviceList li a {
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li a {
-            font-size: 11px; } }
-        .main__serviceList li a:hover {
-          background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
-
-/**********************************
- guide.html
-**********************************/
-.main {
-  width: 85%;
-  margin: 0 auto;
-  background-color: #fffbe8; }
-  @media screen and (max-width: 768px) {
-    .main {
-      width: 100%; } }
-  .main__kv {
-    height: 430px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #fff;
-    padding-left: 0; }
-    @media screen and (max-width: 768px) {
-      .main__kv {
-        width: 100%;
-        height: 250px;
-        font-size: 12px; } }
-  .main__summery h2 {
-    font-size: 20px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery h2 {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__summery p {
-    font-size: 15px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery p {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
-    @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .main__serviceMessage {
-        margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
-      font-size: 20px;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
-          font-size: 16px; } }
-    .main__serviceMessage p {
-      width: 67%;
-      margin: 10px auto 0;
-      font-size: 16px;
-      text-align: center;
-      line-height: 2.2;
-      letter-spacing: 2px; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
-          width: 100%;
-          font-size: 12px;
-          text-align: center;
-          line-height: 1.8;
-          letter-spacing: 2px; } }
-  .main__serviceList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .main__serviceList li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin-right: 2%;
-      border: 1px solid #a7b7bf;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceList li {
-          margin: 5px;
-          padding: 5px; } }
-      .main__serviceList li img {
-        width: 100%;
-        height: 310px;
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li img {
-            width: 100%;
-            height: 135px; } }
-      .main__serviceList li h3 {
-        margin: 50px 0 30px 0;
-        font-size: 18px;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li h3 {
-            margin: 15px 0 15px 0;
-            font-size: 15px;
-            text-align: center; } }
-      .main__serviceList li p {
-        font-size: 15px; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li p {
-            font-size: 11px;
-            margin: 5px;
-            padding: 5px; } }
-      .main__serviceList li a {
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li a {
-            font-size: 11px; } }
-        .main__serviceList li a:hover {
-          background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
-
-/**********************************
- form.html
-**********************************/
-.main {
-  width: 85%;
-  margin: 0 auto;
-  background-color: #fffbe8; }
-  @media screen and (max-width: 768px) {
-    .main {
-      width: 100%; } }
-  .main__kv {
-    height: 430px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #fff;
-    padding-left: 0; }
-    @media screen and (max-width: 768px) {
-      .main__kv {
-        width: 100%;
-        height: 250px;
-        font-size: 12px; } }
-  .main__summery h2 {
-    font-size: 20px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery h2 {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__summery p {
-    font-size: 15px;
-    color: #EDB2C9; }
-    @media screen and (max-width: 768px) {
-      .main__summery p {
-        margin-left: auto;
-        margin-right: 45px;
-        font-size: 20px; } }
-  .main__service {
-    margin: 10px auto 100px;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8; }
-    @media screen and (max-width: 768px) {
-      .main__service {
-        width: 100%;
-        margin: 5px auto 50px;
-        padding: 10px 10px 50px; } }
-  .main__serviceMessage {
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .main__serviceMessage {
-        margin-bottom: 30px; } }
-    .main__serviceMessage h2 {
-      font-size: 20px;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage h2 {
-          font-size: 16px; } }
-    .main__serviceMessage p {
-      width: 67%;
-      margin: 10px auto 0;
-      font-size: 16px;
-      text-align: center;
-      line-height: 2.2;
-      letter-spacing: 2px; }
-      @media screen and (max-width: 768px) {
-        .main__serviceMessage p {
-          width: 100%;
-          font-size: 12px;
-          text-align: center;
-          line-height: 1.8;
-          letter-spacing: 2px; } }
-  .main__serviceList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .main__serviceList li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin-right: 2%;
-      border: 1px solid #a7b7bf;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .main__serviceList li {
-          margin: 5px;
-          padding: 5px; } }
-      .main__serviceList li img {
-        width: 100%;
-        height: 310px;
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li img {
-            width: 100%;
-            height: 135px; } }
-      .main__serviceList li h3 {
-        margin: 50px 0 30px 0;
-        font-size: 18px;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li h3 {
-            margin: 15px 0 15px 0;
-            font-size: 15px;
-            text-align: center; } }
-      .main__serviceList li p {
-        font-size: 15px; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li p {
-            font-size: 11px;
-            margin: 5px;
-            padding: 5px; } }
-      .main__serviceList li a {
-        display: block; }
-        @media screen and (max-width: 768px) {
-          .main__serviceList li a {
-            font-size: 11px; } }
-        .main__serviceList li a:hover {
-          background: #e8ecee; }
-  .main__news {
-    width: 85%;
-    /*固定幅*/
-    margin: 10px auto;
-    padding: 0 20px; }
-    @media screen and (max-width: 768px) {
-      .main__news {
-        width: 100%;
-        padding: 0 5px; } }
-    .main__news--title {
-      margin-bottom: 16px;
-      font-size: 20px; }
-      @media screen and (max-width: 768px) {
-        .main__news--title {
-          margin-bottom: 8px;
-          font-size: 16px; } }
-    .main__news--list {
-      padding: 40px 12px;
-      border-top: 1px solid #a7b7bf; }
-      @media screen and (max-width: 768px) {
-        .main__news--list {
-          padding: 20px 5px; } }
-      .main__news--list li {
-        border-bottom: 1px solid #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--list li {
-            font-size: 12px;
-            margin: 5px;
-            padding: 10px; } }
-        .main__news--list li:first-child {
-          border-top: 1px solid #e8ecee; }
-        .main__news--list li a {
-          display: block;
-          /*aタグ全体でリンクできるようにblock*/
-          padding: 50px 20px;
-          display: block; }
-          @media screen and (max-width: 768px) {
-            .main__news--list li a {
-              margin: 5px;
-              padding: 5px; } }
-          .main__news--list li a:hover {
-            background: #e8ecee; }
-    .main__news--item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .main__news--day {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-right: 32px; }
-      @media screen and (max-width: 768px) {
-        .main__news--day {
-          width: 90px;
-          margin-right: 5px; } }
-    .main__news--data {
-      line-height: 1.8; }
-      @media screen and (max-width: 768px) {
-        .main__news--data {
-          line-height: 1.2;
-          margin-left: 5px; } }
-    .main__news--more {
-      text-align: right; }
-      @media screen and (max-width: 768px) {
-        .main__news--more {
-          font-size: 12px; } }
-      .main__news--more a:hover {
-        background: #e8ecee; }
-        @media screen and (max-width: 768px) {
-          .main__news--more a:hover {
-            font-size: 10px; } }
-  .main__title h2 {
-    font-size: 25px;
-    padding-left: 20px; }
-    @media screen and (max-width: 768px) {
-      .main__title h2 {
-        font-size: 20px; } }
-  .main__contents {
-    margin: 0;
-    padding: 0; }
-    .main__contents--title {
-      width: 100%;
-      margin: 40px auto 5px;
-      padding-left: 40px;
-      background-color: #99FFFF; }
-      @media screen and (max-width: 768px) {
-        .main__contents--title {
-          margin: 30px auto 5px; } }
-      .main__contents--title h2 {
-        font-size: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--title h2 {
-            font-size: 16px; } }
-    .main__contents--consultation {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--consultation h2 {
-        font-size: 18px;
-        padding-left: 20px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--consultation h2 {
-            font-size: 16px; } }
-      @media screen and (max-width: 768px) {
-        .main__contents--consultation ul {
-          font-size: 15px; } }
-    .main__contents--examinationtime {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fffbe8; }
-      .main__contents--examinationtime p {
-        font-size: 17px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime p {
-            font-size: 12px; } }
-      .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--examinationtime table, .main__contents--examinationtime th, .main__contents--examinationtime td {
-            font-size: 12px; } }
-      .main__contents--examinationtime th {
-        background-color: #C2EEFF; }
-    .main__contents--news {
-      padding: 30px;
-      margin-bottom: 20px;
-      background-color: #fffbe8; }
-      .main__contents--news h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        border-bottom: 1px dashed #000; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h3 {
-            font-size: 16px; } }
-      .main__contents--news p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news p {
-            font-size: 12px; } }
-      .main__contents--news h4 {
-        padding-left: 20px;
-        font-size: 16px;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--news h4 {
-            font-size: 12px; } }
-    .main__contents--text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: #fffbe8; }
-      .main__contents--text p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--text p {
-            font-size: 12px; } }
-    .main__contents--medicalcheck {
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #fffbe8; }
-      .main__contents--medicalcheck h3 {
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 600; }
-      .main__contents--medicalcheck h4 {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 1.8em;
-        color: #f00; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck h4 {
-            font-size: 12px;
-            line-height: 1.8em; } }
-      .main__contents--medicalcheck p {
-        font-size: 16px;
-        line-height: 1.2em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicalcheck a {
-        color: #00f; }
-        .main__contents--medicalcheck a:hover {
-          background: #e8ecee; }
-      .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-        border: 1px solid #000;
-        text-align: center;
-        margin-left: 20px;
-        padding: 10px;
-        font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicalcheck table, .main__contents--medicalcheck th, .main__contents--medicalcheck td {
-            padding: 5px;
-            font-size: 12px; } }
-      .main__contents--medicalcheck th {
-        background-color: #C2EEFF; }
-    .main__contents--medicaltreatment {
-      width: 100%;
-      margin: 0 auto;
-      background-color: #fffbe8; }
-      .main__contents--medicaltreatment p {
-        font-size: 16px;
-        line-height: 1.8em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment p {
-            font-size: 12px;
-            line-height: 1.2em; } }
-      .main__contents--medicaltreatment ul {
-        font-size: 18px;
-        line-height: 1.6em; }
-        @media screen and (max-width: 768px) {
-          .main__contents--medicaltreatment ul {
-            font-size: 14px;
-            line-height: 1.0em; } }
-  .main__form {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fffbe8; }
-    .main__form--message textarea {
-      resize: none;
-      width: 300px;
-      height: 200px; }
+  margin: 0 auto; }
+  .form table td {
+    padding-bottom: 30px; }
+  .form table textarea {
+    resize: none;
+    width: 300px;
+    height: 200px; }
+  .form__button {
+    display: block;
+    background-color: #D4EBB9;
+    border-style: none;
+    border-radius: 15%; }
 
 /**********************************
  footer
 **********************************/
 .footer {
-  padding: 90px 0 70px;
-  border-top: 1px solid #e8ecee; }
-  @media screen and (max-width: 768px) {
-    .footer {
-      padding: 45px 0 35px; } }
+  width: 85%;
+  margin: 10px auto;
+  background-color: #fffbe8; }
   .footer__items {
-    width: 85%;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-    background-color: #fffbe8; }
+        justify-content: space-around; }
     @media screen and (max-width: 768px) {
       .footer__items {
         width: 100%;
@@ -2612,45 +478,45 @@ h2, p {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
-    .footer__items--access {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
-    .footer__items h2 {
+  .footer__access {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .footer__access h2 {
       font-size: 20px;
       padding-left: 20px; }
       @media screen and (max-width: 768px) {
-        .footer__items h2 {
+        .footer__access h2 {
           font-size: 16px;
           padding-left: 10px; } }
-    .footer__items ul {
+    .footer__access ul {
       margin-top: 50px; }
       @media screen and (max-width: 768px) {
-        .footer__items ul {
+        .footer__access ul {
           margin-top: 25px;
           font-size: 12px; } }
       @media screen and (max-width: 768px) {
-        .footer__items ul li {
+        .footer__access ul li {
           margin: 5px;
           padding: 5px;
           line-height: 1.2; } }
-    .footer__items--map {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
-      @media screen and (max-width: 768px) {
-        .footer__items--map {
-          margin: 0 auto; } }
-      @media screen and (max-width: 768px) {
-        .footer__items--map iframe {
-          width: 300px;
-          height: 250px; } }
+  .footer__map {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    @media screen and (max-width: 768px) {
+      .footer__map {
+        margin: 0 auto; } }
+    @media screen and (max-width: 768px) {
+      .footer__map iframe {
+        width: 300px;
+        height: 250px; } }
   .footer__copyright {
     color: #b5b5b5;
-    font-size: 11px;
+    font-size: 15px;
     margin-top: 30px;
-    text-align: center;
-    border-top: 1px solid #e8ecee; }
+    text-align: center; }
     @media screen and (max-width: 768px) {
       .footer__copyright {
+        font-size: 12px;
         margin-top: 15px; } }
