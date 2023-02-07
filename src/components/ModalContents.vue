@@ -5,6 +5,7 @@
       <h2 class="modal-ttl">{{ modalTtl }}</h2>
       <div class="modal-content">
         <p>{{ modalContent }}</p>
+        <p>{{ modalTime }}</p>
       </div>
       <div class="modal-btn-wrap">
         <button class="modal-close" @click="modalClose">閉じる</button>
@@ -16,7 +17,7 @@
 
 <script>
 export default {
-  props: ["modalFlg", "modalTtl", "modalContent"],
+  props: ["modalFlg", "modalTtl", "modalContent","modalTime"],
   data() {
     return {
       childModalFlg: this.modalFlg,

@@ -330,8 +330,6 @@ h2, p {
   .service__columnItems {
     text-align: center;
     border: 1px solid #A9A9A9; }
-    .service__columnItems :last-child {
-      background-color: #00f; }
     @media screen and (max-width: 768px) {
       .service__columnItems {
         margin: 5px;

@@ -1,7 +1,7 @@
 //ModalItem.Vue
 <template>
-    <div class="works__contents">
-        <div class="works__contents--item">
+    <div class="works__modalItem">
+        <div class="works__item">
             <div class="works__hoverText">
               <p><a v-bind:href = "modalItems.modalLink">Webサイトを見る</a></p>
             </div>
@@ -10,12 +10,13 @@
             </div>
             <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" />
         </div>
-        <div class="works__contents--text">
+        <div class="works__text">
           <ModalContents
             :modalFlg="modalFlg"
             @modal-clicked="modalFlg = $event"
             :modalTtl="modalItems.modalTtl"
             :modalContent="modalItems.modalContent"
+            :modalTime="modalItems.modalTime"
           />
         </div>
     </div>
@@ -42,14 +43,15 @@ export default {
 
 <style lang="scss" scoped>
 .works{
-    &__contents{
+    &__modalItem{
         width: 85%;
         margin: 10px auto 0;
         @include mq('max','md') {
             width: 100%;
             margin: 5px auto 0;
         }
-        &--item{
+    }
+    &__item{
             margin: 50px auto;
             width: 600px;
           //hover
@@ -62,47 +64,6 @@ export default {
                 width: 300px;
             }
         }
-        &--text{
-            p{
-                font: normal 18px sans-serif;
-                color: #333;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-            }
-            a{
-                margin: 20px;
-                font: normal 18px sans-serif;
-                color: #00f;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-                &:hover{
-                    background-color: #999;
-                }
-            }
-        }
-    }
-    &__image{
-      width: 600px;
-      height: 350px;
-      background: #000;
-      @include mq('max','md') {
-          width: 300px;
-          height: 200px;
-        }
-      img{
-          width: 100%;
-          height: 100%;
-          //hover
-          display: block;
-          opacity: 1;
-          transition: .3s;
-          &:hover{
-            opacity: 0.5;
-          }
-      }
-    }
     &__hoverText{
        position: absolute;
         width: 100%;
@@ -152,5 +113,45 @@ export default {
           }
         }
     }
+    &__image{
+      width: 600px;
+      height: 350px;
+      background: #000;
+      @include mq('max','md') {
+          width: 300px;
+          height: 200px;
+        }
+      img{
+          width: 100%;
+          height: 100%;
+          //hover
+          display: block;
+          opacity: 1;
+          transition: .3s;
+          &:hover{
+            opacity: 0.5;
+          }
+      }
+    }
+    &__text{
+            p{
+                font: normal 18px sans-serif;
+                color: #333;
+                @include mq('max','md') {
+                    font: normal 15px sans-serif;
+                }
+            }
+            a{
+                margin: 20px;
+                font: normal 18px sans-serif;
+                color: #00f;
+                @include mq('max','md') {
+                    font: normal 15px sans-serif;
+                }
+                &:hover{
+                    background-color: #999;
+                }
+            }
+        }
 }
 </style>
