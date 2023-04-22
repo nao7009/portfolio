@@ -38,15 +38,16 @@ export default {
           modalContent: "架空の病院のwebサイトです。HTML/CSS/Javascriptを用いて作成しています。地図の挿入や問い合わせフォームは自身で調べながら作成しました。jQueryを用いてフェードインの機能を実装しています。",
           modalTime: "制作時間：約16時間(HTML：6時間、CSS：5.5時間、js：4.5時間)",
           modalImage: require('@/assets/images/medical_main.jpg'),
-          modalLink: "./workContents_hospital/index.html",
+          // modalLink: "./workContents_hospital/index.html",
+          modalLink: "https://nao7009.github.io/cri_hospital/",
         },
         {
           modalTtl: "CRIカフェ",
           modalContent: "架空のカフェのwebサイトです。HTML/CSS/Javascriptを用いて作成しています。地図の挿入や問い合わせフォームは自身で調べながら作成しました。また、カレンダーも調べながら作成しました。jQueryを用いてフェードインやスライドの機能を実装しています。スライドの機能はslickを使用し、手動でスライドする画面と自動でスライドする画面両方を実装しました。",
           modalTime:"制作時間：約16時間(HTML：6時間、CSS：5.5時間、js：4.5時間)",
           modalImage: require('@/assets/images/cafe_main.jpg'),
-          modalLink: "./workContents_cafe/index.html",
-
+          // modalLink: "./workContents_cafe/index.html",
+          modalLink: "https://nao7009.github.io/cri_cafe/",
         },
                 {
           modalTtl: "CRIレストラン",

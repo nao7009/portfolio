@@ -1,26 +1,26 @@
 // MyHeader.vue
 <template>
-       <header class="header">
-            <div class="header__logo">
-                <router-link to="/">
-                    <img src="../assets/images/logo.png">
-                </router-link>
+    <header class="header">
+        <div class="header__logo">
+            <router-link to="/">
+                <img src="../assets/images/logo.png">
+            </router-link>
+        </div>
+        <div class="header__contents">
+            <div class="header__contents--button" v-on:click="open=!open">
+                <img src="../assets/images/menu.png" aria-hidden="true">
             </div>
-            <div class="header__contents">
-                <div class="header__contents--button" v-on:click="open=!open">
-                    <img src="../assets/images/menu.png" aria-hidden="true">
-                </div>
-                <div class="header__contents--list" v-bind:class="{'is-active':open}">
-                    <nav>
-                        <ul>
-                            <li><router-link to="/works">Works</router-link></li>
-                            <li><router-link to="/contact">Contact</router-link></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__contents--background"></div>
+            <div class="header__contents--list" v-bind:class="{'is-active':open}">
+                <nav>
+                    <ul>
+                        <li><router-link to="/works">Works</router-link></li>
+                        <li><router-link to="/contact">Contact</router-link></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
+            <div class="header__contents--background"></div>
+        </div>
+    </header>
 </template>
 
 <script>
