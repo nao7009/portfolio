@@ -1,6 +1,6 @@
 //ModalButton.vue
 <template>
-  <button class="btn modal" @click="modalClick">Click here！</button>
+  <button class="button modal" @click="modalClick">Click here！</button>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn {
+.button {
   display: block;
   margin: 5px auto;
   background: #999;
@@ -32,6 +32,9 @@ export default {
   padding: 10px 16px;
   cursor: pointer;
   transition: 0.3s;
+  @include mq('max','md') {
+    padding: 8px 10px;
+  }
   &:hover {
     opacity: 0.7;
   }

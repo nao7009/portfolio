@@ -68,38 +68,32 @@ export default {
 
 <style lang="scss" scoped>
 .contact{
+    width: 85%;
+    margin: 0 auto;
+    @include mq('max','md') {
+        width: 100%;
+    }
     &__title{
         text-align: center;
+        @include mq('max','md') {
+        }
         h2{
-            font-size: 30px;
             @include mq('max','md') {
                 margin-left: 5px;
                 padding: 5px;
-                font: normal 20px sans-serif;
-            }
-        }
-        p{
-            font: normal 20px sans-serif;
-            @include mq('max','md') {
-                margin: 5px;
-                padding: 5px;
-                font: normal 15px sans-serif;
             }
         }
     }
     &__form{
         width: 85%;
-        margin: 10px auto 0;
+        margin: 20px auto 0;
         @include mq('max','md') {
             width: 100%;
-            margin: 5px auto 0;
         }
         p{
             text-align: center;
-            font: normal 15px sans-serif;
             color: #555;
             @include mq('max','md') {
-                font: normal 12px sans-serif;
             }
         }
         table{
@@ -109,6 +103,8 @@ export default {
             }
             th, td{
                 padding: 10px;
+                @include mq('max','md') {
+                }
             }
         }
         th{
@@ -118,7 +114,7 @@ export default {
             color: #555;
             vertical-align: top;
             @include mq('max','md') {
-                font: normal 10px sans-serif;
+                font: normal 12px sans-serif;
                 color: #555;
             }
         }
@@ -127,10 +123,11 @@ export default {
             width: 500px;
             height: 300px;
             border-radius: 10px;
+            padding: 20px;
             @include mq('max','md') {
-                font: normal 10px sans-serif;
-                width: 150px;
-                height: 70px;
+                padding: 10px;
+                width: 250px;
+                height: 150px;
             }
         }
     }
@@ -141,9 +138,12 @@ export default {
     height: 40px;
     border-radius: 10%;
     font-size: 15px;
-    background-color: #666;
+    background-color: #999;
     border: none;
     color: #fff;
+    @include mq('max','md') {
+        font-size: 12px;
+    }
 }
 
 </style>

@@ -42,9 +42,8 @@ export default {
         width: 95px;
         height: 90px;
         @include mq('max','md') {
-            margin-top: 5px;
-            width: 55px;
-            height: 50px;
+            width: 70px;
+            height: 65px;
         }
         img{
             width: 100%;
@@ -60,15 +59,11 @@ export default {
                 z-index: 3;
                 width: 50px;
                 height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 color: #fff;
                 cursor: pointer;
                 @include mq('max','md') {
-                    width: 20px;
-                    height: 20px;
-                    margin-left: 20px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
@@ -108,11 +103,10 @@ export default {
                             padding: 5px;
                         }
                         a{
-                            // font: normal 30px sans-serif;
                             font-size: 30px;
                             color: #fff;
                             @include mq('max','md') {
-                                font: normal 15px sans-serif;
+                                font: normal 20px sans-serif;
                             }
                         }
                     }

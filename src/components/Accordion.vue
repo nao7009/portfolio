@@ -73,16 +73,25 @@ export default {
   padding: 15px;
   border-radius: 5px;
   position: relative;
+  @include mq('max','md') {
+    font-size: 12px;
+  }
   &:hover{
     opacity: .8;
     cursor: pointer;
+    @include mq('max','md') {
+    }
   }
   i{
     float: right;
     line-height: 1.3;
+    @include mq('max','md') {
+    }
   }
   >div{
     display: inline-block;
+    @include mq('max','md') {
+    }
   }
   &:after{
     content: "";
@@ -93,11 +102,15 @@ export default {
     height: 0;
     border: 8px solid transparent;
     border-top-color: #fff;
+    @include mq('max','md') {
+    }
   }
 }
 .content {
     padding: 0 15px;
     margin-bottom: 10px;
+    @include mq('max','md') {
+    }
 }
 .open{
     &:after{
@@ -106,6 +119,9 @@ export default {
         top: 15px;
         border: 8px solid transparent;
         border-bottom-color: #fff;
+        @include mq('max','md') {
+          top: 10px;
+      }
     }
 }
 </style>

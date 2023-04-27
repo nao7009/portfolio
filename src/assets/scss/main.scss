@@ -28,9 +28,25 @@ h1,h2,h3{
     font-family: $fontType;
 }
 
+h2{
+    font-size: 40px;
+    @include mq('max','md') {
+        font-size: 30px;
+    }
+}
+
+h3{
+    font-size: 30px;
+    @include mq('max','md') {
+        font-size: 20px;
+    }
+}
+
 p{
     font-family: normal,sans-serif;
-    line-height: 1.5em;
+    font-size: 15px;
+    line-height: 1.8em;
     @include mq('max','md') {
+        font-size: 12px;
     }
 }

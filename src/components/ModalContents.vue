@@ -1,23 +1,23 @@
 //ModalContents.vue
 <template>
-  <div class="modal-wrap" :class="{ 'is-open': modalSwitch }">
+  <div class="modal__wrap" :class="{ 'is-open': modalSwitch }">
     <div class="modal">
-      <h2 class="modal-ttl">{{ modalTtl }}</h2>
-      <div class="modal-content">
+      <h2 class="modal__title">{{ modalTitle }}</h2>
+      <div class="modal__content">
         <p>{{ modalContent }}</p>
         <p>{{ modalTime }}</p>
       </div>
-      <div class="modal-btn-wrap">
-        <button class="modal-close" @click="modalClose">閉じる</button>
+      <div class="modal__button--wrap">
+        <button class="modal__close" @click="modalClose">閉じる</button>
       </div>
     </div>
-    <div class="modal-overlay" @click="modalClose"></div>
+    <div class="modal__overlay" @click="modalClose"></div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["modalFlg", "modalTtl", "modalContent","modalTime"],
+  props: ["modalFlg", "modalTitle", "modalContent","modalTime"],
   data() {
     return {
       childModalFlg: this.modalFlg,
@@ -58,8 +58,9 @@ export default {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-
-  &-wrap {
+  @include mq('max','md') {
+  }
+  &__wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,19 +72,27 @@ export default {
     z-index: -1;
     transition: z-index 0.3s;
     visibility: hidden;
+    @include mq('max','md') {
+    }
     &.is-open {
       z-index: 1;
+      @include mq('max','md') {
+      }
       .modal {
         opacity: 1;
         visibility: visible;
+        @include mq('max','md') {
+        }
       }
-      .modal-overlay {
+      .modal__overlay {
         opacity: 1;
         visibility: visible;
+        @include mq('max','md') {
+        }
       }
     }
   }
-  &-overlay {
+  &__overlay {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -94,9 +103,11 @@ export default {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
+    @include mq('max','md') {
+    }
   }
-  &-close {
-    background-color: #666;
+  &__close {
+    background-color: #999;
     color: #fff;
     font-size: 15px;
     border: none;
@@ -104,20 +115,31 @@ export default {
     padding: 10px 16px;
     cursor: pointer;
     transition: 0.3s;
+    @include mq('max','md') {
+      padding: 8px 10px;
+    }
     &:hover {
       opacity: 0.7;
+      @include mq('max','md') {
+      }
     }
   }
-  &-ttl {
+  &__title {
     font-size: 20px;
     text-align: center;
+    @include mq('max','md') {
+    }
   }
-  &-content {
+  &__content {
     margin-bottom: 30px;
+    @include mq('max','md') {
+    }
   }
-  &-btn {
-    &-wrap {
+  &__button {
+    &--wrap {
       text-align: center;
+      @include mq('max','md') {
+      }
     }
   }
 }

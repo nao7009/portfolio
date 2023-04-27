@@ -53,8 +53,8 @@ export default {
                     margin: 5px;
                     padding: 5px;
                     @include mq('max','md') {
-                        width: 30px;
-                        height: 30px;
+                        width: 35px;
+                        height: 35px;
                         margin: 5px;
                         padding: 5px;
                     }
@@ -92,10 +92,8 @@ export default {
         border-top: 1px solid #777;
         p{
             text-align: center;
-            font: normal 12px sans-serif;
             color: #777;
             @include mq('max','md') {
-                font: normal 10px sans-serif;
             }
         }
     }

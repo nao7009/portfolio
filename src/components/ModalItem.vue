@@ -14,7 +14,7 @@
           <ModalContents
             :modalFlg="modalFlg"
             @modal-clicked="modalFlg = $event"
-            :modalTtl="modalItems.modalTtl"
+            :modalTitle="modalItems.modalTitle"
             :modalContent="modalItems.modalContent"
             :modalTime="modalItems.modalTime"
           />
@@ -43,6 +43,8 @@ export default {
 
 <style lang="scss" scoped>
 .works{
+  @include mq('max','md') {
+    }
     &__modalItem{
         width: 85%;
         margin: 10px auto 0;
@@ -52,20 +54,20 @@ export default {
         }
     }
     &__item{
-            margin: 50px auto;
-            width: 600px;
+          margin: 50px auto;
+          width: 600px;
           //hover
           position: relative;
+          @include mq('max','md') {
+            width: 350px;
+            margin: 30px auto;
+          }
           &:hover .works__hoverText{
             opacity: 1;
           }
-            @include mq('max','md') {
-                margin: 30px auto;
-                width: 300px;
-            }
         }
     &__hoverText{
-       position: absolute;
+        position: absolute;
         width: 100%;
         height: 88%;
         top: 0;
@@ -80,6 +82,7 @@ export default {
         align-items: center;
         justify-content: center; 
         @include mq('max','md') {
+          height: 85%;
         }
         p{
           position: relative;
@@ -117,9 +120,10 @@ export default {
       width: 600px;
       height: 350px;
       background: #000;
+      margin: 0 auto;
       @include mq('max','md') {
-          width: 300px;
-          height: 200px;
+          width: 350px;
+          height: 250px;
         }
       img{
           width: 100%;
@@ -141,17 +145,17 @@ export default {
                     font: normal 15px sans-serif;
                 }
             }
-            a{
-                margin: 20px;
-                font: normal 18px sans-serif;
-                color: #00f;
-                @include mq('max','md') {
-                    font: normal 15px sans-serif;
-                }
-                &:hover{
-                    background-color: #999;
-                }
-            }
+            // a{
+            //     margin: 20px;
+            //     font: normal 18px sans-serif;
+            //     color: #00f;
+            //     @include mq('max','md') {
+            //         font: normal 15px sans-serif;
+            //     }
+            //     &:hover{
+            //         background-color: #999;
+            //     }
+            // }
         }
 }
 </style>

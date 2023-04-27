@@ -62,7 +62,7 @@
                                 <p>2020.12 | 株式会社クリエイティブリソースインスティチュートに入社</p>
                             </div>
                             <div class="main__carrerItemDetail">
-                                <p>Web制作の案件を多く扱っている点や社内勉強会のカリキュラムが豊富な点に<br>興味をもち、入社しました。</p>
+                                <p>Web制作の案件を多く扱っている点や、社内勉強会のカリキュラムが豊富な点に興味をもち、入社しました。</p>
                             </div>
                         </div>
                         <div class="main__carrerItem">
@@ -96,25 +96,25 @@
                         <AccordionMenu>
                             <div slot="title">HTML/CSS</div>
                             <div class="main__skillsList--content" slot="content">
-                                <p>デザインに沿った静的ページのコーディング、CSSアニメーション（調べながらであれば可）</p>
+                                <p>デザインに沿った静的ページのコーディング<br>CSSアニメーション（調べながらであれば可）</p>
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
                             <div slot="title">WordPress/PHP</div>
                             <div class="main__skillsList--content" slot="content">
-                                <p>インストールおよび初期設定、既存のページに追加するページ作成</p>
+                                <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
                             <div slot="title">Java (Servlet/jsp)</div>
                             <div class="main__skillsList--content" slot="content">
-                                <p>データベースを用いた簡易なアプリケーションの作成、設計図を見ながらのコーディング</p>
+                                <p>データベースを用いた簡易なアプリケーションの作成<br>設計図を見ながらのコーディング</p>
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
                             <div slot="title">My SQL</div>
                             <div class="main__skillsList--content" slot="content">
-                                <p>コードの内容理解、データベース作成（調べながらであれば可）</p>
+                                <p>コードの内容理解<br>データベース作成（調べながらであれば可）</p>
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
@@ -194,66 +194,55 @@ export default {
 
 <style lang="scss" scoped >
 .main{
+    width: 85%;
+    margin: 0 auto;
+    @include mq('max','md') {
+        width: 100%;
+    }
     &__title{
         text-align: center;
         @include mq('max','md') {
             margin: 5px auto 20px;
         }
         h2{
-            font-size: 40px;
             margin: 10px auto 60px;
             @include mq('max','md') {
-                margin-left: 5px;
+                margin: 10px auto 20px;
                 padding: 5px;
-                font: normal 20px sans-serif;
-                @include mq('max','md') {
-                }
-            }
-        }
-        p{
-            font-size: 20px;
-            @include mq('max','md') {
-                margin: 5px;
-                padding: 5px;
-                font: normal 15px sans-serif;
                 @include mq('max','md') {
                 }
             }
         }
         h3{
-        text-align: center;
-        font-size: 30px;
-        margin: 20px auto;
-            @include mq('max','md') {
-            margin: 0 auto;
             text-align: center;
-            font: normal 15px sans-serif;
+            margin: 20px auto;
+            @include mq('max','md') {
+                margin: 0 auto;
+                text-align: center;
             }
         }
     }
     &__profile{
         margin: 0 auto 60px;
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         @include mq('max','md') {
-            margin: 0 auto 30px;
             width: 100%;
+            flex-direction: column;
         }
     }
     &__profileImage{
         flex: 1;
         @include mq('max','md') {
-            width: 250px;
-            height: 150px;
             margin: 0 auto;
         }
         img{
             width: 450px;
             height: 330px;
             @include mq('max','md') {
-                width: 250px;
-                height: 150px;
+                width: 300px;
+                height: 200px;
             }
         }        
     }
@@ -266,11 +255,10 @@ export default {
         p{
             font-size: 15px;
             color: #555;
-            margin: 0 10px;
             @include mq('max','md') {
                 margin: 0 auto;
                 width: 100%;
-                font: normal 11px sans-serif;
+                font-size: 12px;
                 text-align: center;
             }
         }
@@ -287,14 +275,18 @@ export default {
 
     }
     &__carrer{
+        width: 85%;
+        margin: 0 auto;
         @include mq('max','md') {
+            width: 100%;
+            margin: 30px auto;
         }
     }
     &__carrerItem{
         width: 800px;
         margin: 0 auto;
         @include mq('max','md') {
-            width: 350px;
+            width: 500px;
         }
         &:after{
             display: block;
@@ -309,7 +301,6 @@ export default {
         align-items: center;
         float: left;
         @include mq('max','md') {
-            margin: 5px auto;
         }
         &:before{
             content: "";
@@ -320,8 +311,8 @@ export default {
             border: solid 3px #CAD4AC;
             border-radius: 50%;
             @include mq('max','md') {
-                width: 40px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
                 background-size: contain;
             }
         }
@@ -339,7 +330,7 @@ export default {
             @include mq('max','md') {
                 margin: 5px 0 0 20px;
                 padding: 8px 6px;
-                max-width: 230px;
+                max-width: 350px;
                 border-radius: 6px;
                 font-size: 10px;
             }
@@ -381,7 +372,7 @@ export default {
             @include mq('max','md') {
                 margin: 0 20px 0 0;
                 padding: 10px;
-                max-width: 270px;
+                max-width: 350px;
                 border-radius: 6px;
                 background: #6C8783;
                 font-size: 10px;
@@ -414,8 +405,8 @@ export default {
             border: solid 3px #CAD4AC;
             border-radius: 50%;
             @include mq('max','md') {
-                width: 40px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
                 background-size: contain;
             }
         }
@@ -425,12 +416,14 @@ export default {
         text-align: center;
         cursor: pointer;
         @include mq('max','md') {
+            margin: 0 auto 40px;
         } 
         p{
             position: relative;
             display: inline-block;
             text-decoration: none;
             @include mq('max','md') {
+                font-size: 15px;
             }
             &:after{
                 position: absolute;
@@ -455,12 +448,17 @@ export default {
     }
     &__skills{
         width: 85%;
-        margin: 0 auto;
+        margin: 100px auto;
         @include mq('max','md') {
+            width: 100%;
+            margin: 30px auto 60px;
         } 
     }
     &__skillsList{
         &--content{
+            @include mq('max','md') {
+                font-size: 12px;
+            } 
         }
     }
 }
@@ -472,13 +470,13 @@ export default {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(100px);
-    transition-duration:.7s;
+    transform: translateY(70px);
+    transition-duration:.9s;
   }
   100% {
     opacity: 1;
     transform: translateY(0px);
-    transition-duration:.7s;
+    transition-duration:.9s;
   }
 }
 //フェードインを1度で終わらせるために設定
