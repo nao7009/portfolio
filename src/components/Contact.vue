@@ -68,10 +68,9 @@ export default {
 
 <style lang="scss" scoped>
 .contact{
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     @include mq('max','md') {
-        width: 100%;
     }
     &__title{
         text-align: center;

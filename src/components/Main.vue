@@ -1,21 +1,22 @@
 // Main.vue
 <template>
-        <main class="main">
-            <div class="main__title">
-                <h2>My Portfolio Site</h2>
+    <main class="main">
+        <div class="main__title">
+            <h2>My Portfolio Site</h2>
+        </div>
+        <div class = main__title>
+            <h3>About me</h3>
+        </div>
+        <div class="main__profile">
+            <div class="main__profileImage">
+                <img src="../assets/images/profile.jpg">
             </div>
-            <div class = main__title>
-                <h3>About me</h3>
-            </div>
-            <div class="main__profile">
-                <div class="main__profileImage">
-                    <img src="../assets/images/profile.jpg">
-                </div>
-                <div class="main__profileText">
-                    <h3>Nao Shimojo</h3>
-                    <p>静岡県出身。神奈川県在住。<br>外ではエンジニア、家では一児の母。<br>思い描いたものを形にすることや、<br>興味があるものを追求することが好き。<br>フロントエンドエンジニアとしてWeb制作に携わることを目標に、<br>業務の傍らで日々勉強中。</p>
-                </div> 
-            </div>
+            <div class="main__profileText">
+                <h3>Nao Shimojo</h3>
+                <p>静岡県出身。神奈川県在住。<br>大学卒業後、地元の公立こども園で3年間保育士として働く。<br>結婚を機に退職し、職業訓練校でプログラミングの基礎等を学び、株式会社CRIに入社。</p><p>現在は外ではエンジニア、家では一児の母。<br>思い描いたものを形にすることや、<br>興味があるものを追求することが好き。<br>フロントエンドエンジニアとしてWeb制作に携わることを目標に、<br>業務の傍らで日々勉強中。</p>
+            </div> 
+        </div>
+        <transition>
             <div class="fadeInAfter" :class="{fadeIn:visible}">
                 <div class="main__carrer">
                     <div class="main__title">
@@ -87,6 +88,8 @@
                     </div>  
                 </div>
             </div>
+        </transition>
+        <transition>
             <div class="fadeInAfter" :class="{fadeIn:visible2}">
                 <div class="main__skills">
                     <div class="main__title">
@@ -144,7 +147,8 @@
                     </div>
                 </div>           
             </div>
-        </main>
+        </transition>
+    </main>
 </template>
 
 <script>
@@ -177,15 +181,17 @@ export default {
         },
         handleScroll() {
             if (!this.visible) {
-                this.visible = window.scrollY > 300;
-            }else if(window.scrollY < 290){
-                this.visible = !this.visible;
+                this.visible = window.scrollY > 100;
             }
+            // else if(window.scrollY < 90){
+            //     this.visible = !this.visible;
+            // }
             if (!this.visible2) {
-                this.visible2 = window.scrollY > 750;
-            }else if(window.scrollY < 740){
-                this.visible2 = !this.visible2;
+                this.visible2 = window.scrollY > 800;
             }
+            // else if(window.scrollY < 790){
+            //     this.visible2 = !this.visible2;
+            // }
         },
     }
 }
@@ -470,7 +476,7 @@ export default {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(100px);
     transition-duration:.9s;
   }
   100% {

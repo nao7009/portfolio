@@ -1,16 +1,16 @@
 //ModalItem.Vue
 <template>
-    <div class="works__modalItem">
-        <div class="works__item">
-            <div class="works__hoverText">
-              <p><a v-bind:href = "modalItems.modalLink">Webサイトを見る</a></p>
+    <div class="modal">
+        <div class="modal__item">
+            <div class="modal__hoverText">
+              <p><a v-bind:href = "modalItems.modalLink">詳しく見る</a></p>
             </div>
-            <div class="works__image">
+            <div class="modal__image">
               <img :src = "modalItems.modalImage">
             </div>
             <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" />
         </div>
-        <div class="works__text">
+        <div class="modal__text">
           <ModalContents
             :modalFlg="modalFlg"
             @modal-clicked="modalFlg = $event"
@@ -42,27 +42,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.works{
+.modal{
+  width: 85%;
+  margin: 10px auto 0;
   @include mq('max','md') {
-    }
-    &__modalItem{
-        width: 85%;
-        margin: 10px auto 0;
-        @include mq('max','md') {
-            width: 100%;
-            margin: 5px auto 0;
-        }
+    width: 100%;
+    margin: 5px auto 0;
     }
     &__item{
-          margin: 50px auto;
+          margin: 20px auto 50px;
           width: 600px;
           //hover
           position: relative;
           @include mq('max','md') {
-            width: 350px;
-            margin: 30px auto;
+            margin: 20px auto 30px;
+            width: 400px;
           }
-          &:hover .works__hoverText{
+          &:hover .modal__hoverText{
             opacity: 1;
           }
         }
@@ -122,7 +118,8 @@ export default {
       background: #000;
       margin: 0 auto;
       @include mq('max','md') {
-          width: 350px;
+          width: 400px;
+          // width: 350px;
           height: 250px;
         }
       img{
@@ -145,17 +142,6 @@ export default {
                     font: normal 15px sans-serif;
                 }
             }
-            // a{
-            //     margin: 20px;
-            //     font: normal 18px sans-serif;
-            //     color: #00f;
-            //     @include mq('max','md') {
-            //         font: normal 15px sans-serif;
-            //     }
-            //     &:hover{
-            //         background-color: #999;
-            //     }
-            // }
         }
 }
 </style>

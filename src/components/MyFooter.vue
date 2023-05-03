@@ -28,10 +28,9 @@ export default {
 
 <style lang="scss" scoped>
 .footer{
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     @include mq('max','md') {
-        width: 100%;
         padding: 5px;
     }
     &__contents{

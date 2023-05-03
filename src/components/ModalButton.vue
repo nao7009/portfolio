@@ -1,6 +1,6 @@
 //ModalButton.vue
 <template>
-  <button class="button modal" @click="modalClick">Click here！</button>
+  <button class="button" @click="modalClick">Click here！</button>
 </template>
 
 <script>
