@@ -3,7 +3,7 @@
     <div class="modal">
         <div class="modal__item">
             <div class="modal__hoverText">
-              <p><a v-bind:href = "modalItems.modalLink">詳しく見る</a></p>
+              <p><a v-bind:href = "modalItems.modalLink" target="_blank">詳しく見る</a></p>
             </div>
             <div class="modal__image">
               <img :src = "modalItems.modalImage">
