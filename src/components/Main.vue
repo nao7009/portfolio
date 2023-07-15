@@ -24,10 +24,18 @@
                     </div>
                     <div class="main__carrerItem">
                         <div class="main__carrerItemSummary">
-                            <p>2022.10～ | 大手企業にてWebディレクターを務める</p>
+                            <p>2023.04～ | 産休・育休中</p>
                         </div>
                         <div class="main__carrerItemDetail">
-                            <p>大型案件のディレクション業務に携わり、<br>バナーやLP制作の進行管理や提案書作成等を担当しています。<br>ディレクターについて自身でも日々勉強中です。</p>
+                            <p>第一子妊娠・出産に伴い、休暇取得中です。<br>復帰後もスキルアップできるよう、育児の合間を縫ってWeb制作の勉強中です。</p>
+                        </div>
+                    </div>
+                    <div class="main__carrerItem">
+                        <div class="main__carrerItemSummary">
+                            <p>2022.10～2023.03 | 大手広告会社にてWebディレクターを務める</p>
+                        </div>
+                        <div class="main__carrerItemDetail">
+                            <p>大型案件のディレクションに携わっていました。<br>バナー・LP制作の進行管理や提案書作成等を担当、<br>スケジュール管理を担当し、制作会社への指示やデータ納品等を行っていました。<br>ディレクション業務が未経験だったため自身でも日々勉強をし、<br>チームが円滑に制作を進められるように意識して業務に取り組みました。</p>
                         </div>
                     </div>
                     <div class="main__carrerItem">
@@ -103,6 +111,12 @@
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
+                            <div slot="title">JavaScript</div>
+                            <div class="main__skillsList--content" slot="content">
+                                <p>メソッドを利用したコーディング<br>Vue.jsを用いたコーディング</p>
+                            </div>
+                        </AccordionMenu>
+                        <AccordionMenu>
                             <div slot="title">WordPress/PHP</div>
                             <div class="main__skillsList--content" slot="content">
                                 <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
@@ -141,7 +155,7 @@
                         <AccordionMenu>
                             <div slot="title">Certification</div>
                             <div class="main__skillsList--content" slot="content">
-                                <p>ITパスポート(2020年8月取得)<br>Webクリエイター能力認定試験エキスパート(2021年3月取得)<br>基本情報技術者試験(2021年10月取得)<br>AWS クラウドプラクティショナー(取得予定)</p>
+                                <p>ITパスポート(2020年8月取得)<br>Webクリエイター能力認定試験エキスパート(2021年3月取得)<br>基本情報技術者試験(2021年10月取得)<br>AWS クラウドプラクティショナー(取得予定)<br>HTML5 プロフェッショナル認定試験レベル1(取得予定)</p>
                             </div>
                         </AccordionMenu>
                     </div>
