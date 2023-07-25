@@ -3,7 +3,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import HomePage from '@/views/Home.vue'
-import MyProfile  from '@/components/Profile'
 import MyWorks from '@/components/Works'
 import ContactForm from '@/components/Contact'
 
@@ -12,7 +11,6 @@ Vue.use(VueRouter)
 const routes = [
   // { path: '/home', component: HomePage },
   { path: '/', component: HomePage },
-  { path: '/profile', component: MyProfile },
   { path: '/works', component: MyWorks },
   { path: '/contact', component: ContactForm }
 ]

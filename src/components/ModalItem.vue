@@ -58,6 +58,9 @@ export default {
             margin: 20px auto 30px;
             width: 400px;
           }
+          @include mq('max','sm') {
+            width: 350px;
+          }
           &:hover .modal__hoverText{
             opacity: 1;
           }
@@ -119,8 +122,11 @@ export default {
       margin: 0 auto;
       @include mq('max','md') {
           width: 400px;
-          // width: 350px;
           height: 250px;
+        }
+        @include mq('max','sm') {
+          width: 250px;
+          height: 150px;
         }
       img{
           width: 100%;

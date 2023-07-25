@@ -8,7 +8,7 @@
             </div>
             <div class="works__personalProduction">
               <h3>personal</h3>
-              <p>個人で作成した物や会社のカリキュラムで作成したWebサイトをご紹介します。</p>
+              <p>個人で作成した物や会社のカリキュラムで作成した<br>Webサイトをご紹介します。</p>
             <!-- <div class="fadeInAfter" :class="{fadeIn:visible}"> -->
               <ModalItem :modalItems="modalItems[0]" />
               <ModalItem :modalItems="modalItems[1]" />
@@ -21,7 +21,7 @@
               <ModalItem :modalItems="modalItems[3]" />
               <ModalItem :modalItems="modalItems[4]" />
               <div class="works__advertisement">
-                <p>大手クライアントのバナー・LP制作のディレクションにも関わらせていただきました。</p>
+                <p>大手クライアントのバナー・LP制作のディレクションにも<br>関わらせていただきました。</p>
                 <div class="works__advertisementImage">
                   <img src="../assets/images/9ec80fdd5318f8e17dd23ade5ad90bbf.w3000.h600._CR0,0,3000,600_SX3000_.jpg">
                 </div>
@@ -148,6 +148,9 @@ export default {
       margin: 60px auto 10px;
       @include mq('max','md') {
       }
+      @include mq('max','sm') {
+        margin: 30px auto 10px;
+      }
       p{
           @include mq('max','md') {
               margin: 5px;
@@ -164,6 +167,9 @@ export default {
       margin: 0 auto;
       @include mq('max','md') {
         width: 400px;
+      }
+      @include mq('max','sm') {
+        width: 250px;
       }
       img{
         width: 100%;

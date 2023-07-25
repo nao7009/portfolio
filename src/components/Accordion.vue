@@ -76,6 +76,10 @@ export default {
   @include mq('max','md') {
     font-size: 12px;
   }
+  @include mq('max','sm') {
+    padding: 10px;
+    font-size: 10px;
+  }
   &:hover{
     opacity: .8;
     cursor: pointer;
@@ -103,6 +107,9 @@ export default {
     border: 8px solid transparent;
     border-top-color: #fff;
     @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+      top: 12px;
     }
   }
 }

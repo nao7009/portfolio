@@ -45,6 +45,10 @@ export default {
             width: 70px;
             height: 65px;
         }
+        @include mq('max','sm') {
+            width: 50px;
+            height: 45px;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -65,6 +69,9 @@ export default {
                     width: 30px;
                     height: 30px;
                 }
+                @include mq('max','md') {
+                    top: 30px;
+                }
             }
         }
         &--list{
@@ -84,6 +91,9 @@ export default {
             transition: all 0.5s linear;
             @include mq('max','md') {
                 width: 150px;
+            }
+            @include mq('max','sm') {
+                width: 100px;
             }
             &.is-active{
                 transform: translateX(0);
@@ -107,6 +117,9 @@ export default {
                             color: #fff;
                             @include mq('max','md') {
                                 font: normal 20px sans-serif;
+                            }
+                            @include mq('max','sm') {
+                                font: normal 15px sans-serif;
                             }
                         }
                     }

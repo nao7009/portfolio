@@ -14,7 +14,7 @@
                     </div>               
                 </div>
                 <div class="footer__copy">
-                    <p>© Shimojo-na 2022</p>
+                    <p>&copy; Shimojo-na 2022</p>
                 </div>
         </footer>
 </template>
@@ -57,6 +57,12 @@ export default {
                         margin: 5px;
                         padding: 5px;
                     }
+                    @include mq('max','sm') {
+                        width: 25px;
+                        height: 25px;
+                        margin: 0;
+                        padding: 5px;
+                    }
                     img{
                         width: 100%;
                         height: 100%;
@@ -80,9 +86,16 @@ export default {
                         width: 20px;
                         height: 20px;
                     }
+                    @include mq('max','sm') {
+                        width: 15px;
+                        height: 15px;
+                    }
                 }
                 @include mq('max','md') {
                     margin-top: 20px;
+                }
+                @include mq('max','sm') {
+                    margin-top: 15px;
                 }
             }
         }

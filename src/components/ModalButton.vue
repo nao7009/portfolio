@@ -35,6 +35,10 @@ export default {
   @include mq('max','md') {
     padding: 8px 10px;
   }
+  @include mq('max','sm') {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
   &:hover {
     opacity: 0.7;
   }

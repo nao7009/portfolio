@@ -104,6 +104,9 @@ export default {
                 padding: 10px;
                 @include mq('max','md') {
                 }
+                @include mq('max','sm') {
+                    padding: 8px;
+                }
             }
         }
         th{
@@ -114,7 +117,9 @@ export default {
             vertical-align: top;
             @include mq('max','md') {
                 font: normal 12px sans-serif;
-                color: #555;
+            }
+            @include mq('max','sm') {
+                font: normal 10px sans-serif;
             }
         }
         textarea{
@@ -127,6 +132,11 @@ export default {
                 padding: 10px;
                 width: 250px;
                 height: 150px;
+            }
+            @include mq('max','sm') {
+                padding: 10px;
+                width: 180px;
+                height: 120px;
             }
         }
     }
@@ -142,6 +152,11 @@ export default {
     color: #fff;
     @include mq('max','md') {
         font-size: 12px;
+    }
+    @include mq('max','sm') {
+        width: 40px;
+        height: 30px;
+        font-size: 10px;
     }
 }
 

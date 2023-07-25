@@ -197,15 +197,9 @@ export default {
             if (!this.visible) {
                 this.visible = window.scrollY > 100;
             }
-            // else if(window.scrollY < 90){
-            //     this.visible = !this.visible;
-            // }
             if (!this.visible2) {
                 this.visible2 = window.scrollY > 800;
             }
-            // else if(window.scrollY < 790){
-            //     this.visible2 = !this.visible2;
-            // }
         },
     }
 }
@@ -216,7 +210,7 @@ export default {
 .main{
     width: 85%;
     margin: 0 auto;
-    @include mq('max','md') {
+    @include mq('max','lg') {
         width: 100%;
     }
     &__title{
@@ -247,9 +241,10 @@ export default {
         width: 90%;
         display: flex;
         justify-content: space-around;
-        @include mq('max','md') {
+        @include mq('max','lg') {
             width: 100%;
             flex-direction: column;
+            text-align: center;
         }
     }
     &__profileImage{
@@ -263,6 +258,10 @@ export default {
             @include mq('max','md') {
                 width: 300px;
                 height: 200px;
+            }
+            @include mq('max','sm') {
+                width: 200px;
+                height: 150px;
             }
         }        
     }
@@ -281,6 +280,9 @@ export default {
                 font-size: 12px;
                 text-align: center;
             }
+            @include mq('max','md') {
+                font-size: 8px;
+            }
         }
         h3{
             margin: 0 10px;
@@ -290,14 +292,17 @@ export default {
                 margin: 0 auto;
                 text-align: center;
                 font: normal 15px sans-serif; 
-            }            
+            }  
+            @include mq('max','sm') {
+                font: normal 12px sans-serif; 
+            }           
         }
 
     }
     &__carrer{
         width: 85%;
         margin: 0 auto;
-        @include mq('max','md') {
+        @include mq('max','lg') {
             width: 100%;
             margin: 30px auto;
         }
@@ -305,8 +310,14 @@ export default {
     &__carrerItem{
         width: 800px;
         margin: 0 auto;
+        @include mq('min-max','md','lg') {
+            width: 730px;
+        }
         @include mq('max','md') {
             width: 500px;
+        }
+        @include mq('max','sm') {
+            width: 100%;
         }
         &:after{
             display: block;
@@ -335,6 +346,10 @@ export default {
                 height: 50px;
                 background-size: contain;
             }
+            @include mq('max','sm') {
+                width: 40px;
+                height: 40px;
+            }
         }
         p{
             margin: 0;
@@ -353,6 +368,10 @@ export default {
                 max-width: 350px;
                 border-radius: 6px;
                 font-size: 10px;
+            }
+            @include mq('max','sm') {
+                max-width: 200px;
+                font-size: 8px;
             }
             &:after{
                 content: "";
@@ -397,6 +416,10 @@ export default {
                 background: #6C8783;
                 font-size: 10px;
             }
+            @include mq('max','sm') {
+                max-width: 270px;
+                font-size: 8px;
+            }
             &:after{
                 content: "";
                 position: absolute;
@@ -429,6 +452,10 @@ export default {
                 height: 50px;
                 background-size: contain;
             }
+            @include mq('max','sm') {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
     &__moreInfoButton{
@@ -444,6 +471,9 @@ export default {
             text-decoration: none;
             @include mq('max','md') {
                 font-size: 15px;
+            }
+            @include mq('max','sm') {
+                font-size: 10px;
             }
             &:after{
                 position: absolute;
@@ -469,7 +499,7 @@ export default {
     &__skills{
         width: 85%;
         margin: 100px auto;
-        @include mq('max','md') {
+        @include mq('max','lg') {
             width: 100%;
             margin: 30px auto 60px;
         } 
