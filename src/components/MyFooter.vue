@@ -4,9 +4,7 @@
                 <div class="footer__contents">
                     <div class="footer__contents--sns">
                         <ul>
-                            <li><a href="https://twitter.com/?lang=ja"><img src="../assets/images/twitter.png"></a></li>
-                            <li><a href="https://www.instagram.com/"><img src="../assets/images/instagram.png"></a></li>
-                            <li><a href="https://ja-jp.facebook.com/"><img src="../assets/images/facebook.png"></a></li>
+                            <li><a href="https://github.com/nao7009"><img src="../assets/images/github.png"></a></li>
                         </ul>
                     </div>
                     <div class="footer__contents--top">
