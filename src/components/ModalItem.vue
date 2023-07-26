@@ -83,6 +83,10 @@ export default {
         @include mq('max','md') {
           height: 85%;
         }
+        @include mq('max','sm') {
+          width: 75%;
+          left: 45px;
+        }
         p{
           position: relative;
           display: inline-block;
