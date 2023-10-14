@@ -12,7 +12,7 @@
                     </div>               
                 </div>
                 <div class="footer__copy">
-                    <p>&copy; Shimojo-na 2022</p>
+                    <small>&copy; Shimojo-na 2023</small>
                 </div>
         </footer>
 </template>
