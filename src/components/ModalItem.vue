@@ -1,6 +1,6 @@
 //ModalItem.Vue
 <template>
-    <div class="modal">
+    <div class="modal" ontouchstart="">
         <div class="modal__item">
             <div class="modal__hoverText">
               <p><a v-bind:href = "modalItems.modalLink" target="_blank">詳しく見る</a></p>
@@ -8,7 +8,9 @@
             <div class="modal__image">
               <img :src = "modalItems.modalImage">
             </div>
-            <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" />
+        </div>
+        <div class="modal__button">
+          <ModalButton :modalFlg="modalFlg" @modal-clicked="modalFlg = $event" />
         </div>
         <div class="modal__text">
           <ModalContents
@@ -43,23 +45,21 @@ export default {
 
 <style lang="scss" scoped>
 .modal{
-  width: 85%;
-  margin: 10px auto 0;
+  width: 350px;
+  margin: 10px auto;
   @include mq('max','md') {
-    width: 100%;
-    margin: 5px auto 0;
+    width: 400px;
+    margin: 5px auto;
     }
     &__item{
-          margin: 20px auto 50px;
-          width: 600px;
+          margin: 10px auto;
+          width: 100%;
+
           //hover
           position: relative;
           @include mq('max','md') {
-            margin: 20px auto 30px;
-            width: 400px;
           }
           @include mq('max','sm') {
-            width: 350px;
           }
           &:hover .modal__hoverText{
             opacity: 1;
@@ -68,7 +68,7 @@ export default {
     &__hoverText{
         position: absolute;
         width: 100%;
-        height: 88%;
+        height: 100%;
         top: 0;
         left: 0;
         text-align: center;
@@ -81,7 +81,7 @@ export default {
         align-items: center;
         justify-content: center; 
         @include mq('max','md') {
-          height: 85%;
+          // height: 85%;
         }
         @include mq('max','sm') {
           width: 75%;
@@ -120,8 +120,10 @@ export default {
         }
     }
     &__image{
-      width: 600px;
-      height: 350px;
+      // width: 400px;
+      // height: 250px;
+      width: 350px;
+      height: 250px;
       background: #000;
       margin: 0 auto;
       @include mq('max','md') {
@@ -129,7 +131,7 @@ export default {
           height: 250px;
         }
         @include mq('max','sm') {
-          width: 250px;
+          width: 200px;
           height: 150px;
         }
       img{
@@ -153,5 +155,10 @@ export default {
                 }
             }
         }
+    &__button{
+      margin: 5px auto;
+      @include mq('max','sm') {
+        }
+    }
 }
 </style>

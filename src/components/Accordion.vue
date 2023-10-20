@@ -59,6 +59,7 @@ export default {
 }
 .rotate-enter-active {
   animation: rotate .2s linear;
+
 }
 .accordion {
     max-width: 70%;
@@ -68,8 +69,8 @@ export default {
   margin-bottom: 10px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
-  color: #fff;
-  background-color: #728BA1;
+  color: #F4F4F4;
+  background-color: #807D7E;
   padding: 15px;
   border-radius: 5px;
   position: relative;

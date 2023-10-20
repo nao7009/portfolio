@@ -9,11 +9,11 @@
         </div>
         <div class="main__profile">
             <div class="main__profileImage">
-                <img src="../assets/images/profile.jpg">
+                <img src="../assets/images/profile.png">
             </div>
             <div class="main__profileText">
                 <h3>Nao Shimojo</h3>
-                <p>静岡県出身。神奈川県在住。<br>大学卒業後、地元の公立こども園で3年間保育士として働く。<br>結婚を機に退職し、職業訓練校でプログラミングの基礎等を学び、株式会社CRIに入社。</p><p>現在は外ではエンジニア、家では一児の母。<br>思い描いたものを形にすることや、<br>興味があるものを追求することが好き。<br>フロントエンドエンジニアとしてWebシステムの開発やWeb制作に携わることを目標に<br>育児の傍らで日々勉強中。</p>
+                <p>静岡県出身。<br>大学卒業後、地元の公立こども園で保育士として働く。<br>3年間勤めたのち、結婚を機に退職する。<br>職業訓練校でプログラミングの基礎等を学び、株式会社CRIに入社。</p><p>現在は外ではエンジニア、家では一児の母。<br>思い描いたものを形にすることや、<br>興味があるものを追求することが好き。<br>フロントエンドエンジニアになることを目標に、<br>育児の傍らで日々勉強中。</p>
             </div> 
         </div>
         <transition>
@@ -113,17 +113,17 @@
                         <AccordionMenu>
                             <div slot="title">JavaScript</div>
                             <div class="main__skillsList--content" slot="content">
-                                <p>メソッドを利用したコーディング<br>Vue.jsを用いたコーディング</p>
+                                <p>メソッド等を利用した動的ページの作成<br>Vue.jsを用いたコーディング</p>
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
-                            <div slot="title">WordPress/PHP</div>
+                            <div slot="title">WordPress、PHP</div>
                             <div class="main__skillsList--content" slot="content">
                                 <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
-                            <div slot="title">Java (Servlet/jsp)</div>
+                            <div slot="title">Java、Servlet/jsp</div>
                             <div class="main__skillsList--content" slot="content">
                                 <p>データベースを用いた簡易なアプリケーションの作成<br>設計図を見ながらのコーディング</p>
                             </div>
@@ -219,7 +219,7 @@ export default {
             margin: 5px auto 20px;
         }
         h2{
-            margin: 10px auto 60px;
+            margin: 10px auto 40px;
             @include mq('max','md') {
                 margin: 10px auto 20px;
                 padding: 5px;
@@ -242,31 +242,35 @@ export default {
         display: flex;
         justify-content: space-around;
         @include mq('max','lg') {
-            width: 100%;
             flex-direction: column;
             text-align: center;
         }
     }
     &__profileImage{
-        flex: 1;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        @include mq('max','lg') {
+            margin-bottom: 20px;
+        }
         @include mq('max','md') {
-            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+        }
+        @include mq('max','sm') {
+            margin-bottom: 10px;
+            width: 150px;
+            height: 150px;
         }
         img{
-            width: 450px;
-            height: 330px;
+            width: 100%;
             @include mq('max','md') {
-                width: 300px;
-                height: 200px;
             }
             @include mq('max','sm') {
-                width: 200px;
-                height: 150px;
             }
         }        
     }
     &__profileText{
-        flex: 1;
         @include mq('max','md') {
             margin-top: 15px;
             width: 100%;
@@ -339,7 +343,7 @@ export default {
             display: inline-block;
             width: 80px;
             height: 80px;
-            border: solid 3px #CAD4AC;
+            border: solid 3px #979797;
             border-radius: 50%;
             @include mq('max','md') {
                 width: 50px;
@@ -360,7 +364,7 @@ export default {
             padding: 17px 13px;
             max-width: 600px;
             border-radius: 12px;
-            background: #F5E8C7;
+            background: #C8C8C8;
             font-size: 15px;
             @include mq('max','md') {
                 margin: 5px 0 0 20px;
@@ -380,12 +384,12 @@ export default {
                 top: 18px; 
                 left: -24px;
                 border: 12px solid transparent;
-                border-right: 12px solid #F5E8C7;
+                border-right: 12px solid #C8C8C8;
                 @include mq('max','md') {
                     top: 9px; 
                     left: -12px;
                     border: 6px solid transparent;
-                    border-right: 6px solid #F5E8C7;
+                    border-right: 6px solid #C8C8C8;
                 }
             } 
         }
@@ -405,15 +409,15 @@ export default {
             padding: 20px;
             max-width: 600px;
             border-radius: 12px;
-            background: #6C8783;
+            background: #6C6C6C;
             font-size: 15px;
-            color: #fff;
+            color: #F4F4F4;
             @include mq('max','md') {
                 margin: 0 20px 0 0;
                 padding: 10px;
                 max-width: 350px;
                 border-radius: 6px;
-                background: #6C8783;
+                background: #6C6C6C;
                 font-size: 10px;
             }
             @include mq('max','sm') {
@@ -426,14 +430,14 @@ export default {
                 top: 15px; 
                 right: -19px;
                 border: 8px solid transparent;
-                border-left: 18px solid #6C8783;
+                border-left: 18px solid #6C6C6C;
                 -webkit-transform: rotate(-35deg);
                 transform: rotate(-35deg);
                 @include mq('max','md') {
                     top: 15px; 
                     right: -10px;
                     border: 4px solid transparent;
-                    border-left: 9px solid #6C8783;
+                    border-left: 9px solid #6C6C6C;
                     -webkit-transform: rotate(-20deg);
                     transform: rotate(-20deg);
                 }
@@ -445,7 +449,7 @@ export default {
             display: inline-block;
             width: 80px;
             height: 80px;
-            border: solid 3px #CAD4AC;
+            border: solid 3px #979797;
             border-radius: 50%;
             @include mq('max','md') {
                 width: 50px;

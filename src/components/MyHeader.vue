@@ -39,15 +39,17 @@ export default {
     justify-content: space-between;
     border-bottom: 1px solid #777;
     &__logo{
-        width: 95px;
-        height: 90px;
+        // width: 95px;
+        // height: 90px;
+        width: 100px;
+        height: 100px;
         @include mq('max','md') {
             width: 70px;
-            height: 65px;
+            height: 70px;
         }
         @include mq('max','sm') {
             width: 50px;
-            height: 45px;
+            height: 50px;
         }
         img{
             width: 100%;

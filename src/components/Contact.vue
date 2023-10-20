@@ -77,8 +77,9 @@ export default {
         @include mq('max','md') {
         }
         h2{
+            margin: 10px auto 40px;
             @include mq('max','md') {
-                margin-left: 5px;
+                margin: 10px auto 20px;
                 padding: 5px;
             }
         }

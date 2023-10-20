@@ -100,8 +100,9 @@ export default {
     }
     &__copy{
         border-top: 1px solid #777;
-        p{
-            text-align: center;
+        padding: 10px;
+        text-align: center;
+        small{
             color: #777;
             @include mq('max','md') {
             }

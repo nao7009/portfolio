@@ -4,22 +4,28 @@
         <MyHeader/>
         <main class="works">
             <div class="works__title">
-                <h2>Works</h2>
+              <h2>Works</h2>
             </div>
             <div class="works__personalProduction">
               <h3>personal</h3>
-              <p>個人で作成した物や会社のカリキュラムで作成した<br>Webサイトをご紹介します。</p>
+              <p>個人や会社のカリキュラムで作成した物をご紹介します。</p>
             <!-- <div class="fadeInAfter" :class="{fadeIn:visible}"> -->
+            <div class="works__items">
               <ModalItem :modalItems="modalItems[0]" />
               <ModalItem :modalItems="modalItems[1]" />
               <ModalItem :modalItems="modalItems[2]" />
+              <ModalItem :modalItems="modalItems[3]" />
             <!-- </div> -->
+            </div>
             </div>
             <div class="works__cases">
               <h3>buisiness</h3>
               <p>業務で制作したサイトや広告をご紹介します。</p>
-              <ModalItem :modalItems="modalItems[3]" />
+            <div class="works__items">
+
               <ModalItem :modalItems="modalItems[4]" />
+              <ModalItem :modalItems="modalItems[5]" />
+              </div>
               <div class="works__advertisement">
                 <p>大手クライアントのバナー・LP制作のディレクションにも<br>関わらせていただきました。</p>
                 <div class="works__advertisementImage">
@@ -50,24 +56,31 @@ export default {
       modalItems: [
         {
           modalTitle: "CRIクリニック",
-          modalContent: "架空の病院のwebサイトです。HTML/CSS/Javascriptを用いて作成しています。地図の挿入や問い合わせフォームは自身で調べながら作成しました。Vue.jsで実装しています。親しみをもてるよう、優しい色合いでサイトを制作することを意識しました。",
+          modalContent: "Vueのコンポーネントを用いて架空の病院のwebサイトを作成しました。HTML/CSS/Vue.jsで実装しました。地図の挿入や問い合わせフォームは自身で調べながら作成しました。親しみをもてるよう、優しい色合いでサイトを制作することを意識しました。",
           modalTime: "制作時間：約25時間(HTML：6時間、CSS：5.5時間、js：4.5時間（Vue.jsを用いた実装：9時間）)",
           modalImage: require('@/assets/images/medical_main.jpg'),
           modalLink: "https://nao7009.github.io/cri_hospital/",
         },
         {
           modalTitle: "CRIカフェ",
-          modalContent: "架空のカフェのwebサイトです。HTML/CSS/Javascriptを用いて作成しています。カルーセルやカレンダー等の機能はjQueryを使用していましたが、Vue.jsでの実装はコードの書き方が異なるため、自身で調べながら作成しました。Vue.jsで実装しています。トップページのカルーセルや、予約ページのカレンダーはコンポーネントで分けています。",
+          modalContent: "Vueのコンポーネントを用いて架空のカフェのwebサイトを作成しました。HTML/CSS/Vue.jsで実装しました。トップページのカルーセルや、予約ページのカレンダーはコンポーネントで分けました。カルーセルやカレンダー等の機能は元々jQueryで実装していましたが、Vue.jsではコードの書き方が異なるため自身で調べながら作成しました。",
           modalTime:"制作時間：約25時間(HTML：6時間、CSS：5.5時間、js：4.5時間（Vue.jsを用いた実装：9時間）)",
           modalImage: require('@/assets/images/cafe_main.jpg'),
           modalLink: "https://nao7009.github.io/cri_cafe/",
         },
                 {
           modalTitle: "CRIレストラン",
-          modalContent: "レストランのwebページです。社内勉強会のカリキュラムでHTML/CSS/jsについて学習し、「実際にコーディングを行ってwebサイトを作成する」という課題で作成しました。HTML/CSS/Javascriptを用いて作成しています。CSSはSCSSで記述し、レスポンスコーディングにも対応しています。SNSの投稿記事を掲載している部分にjQueryでスライドを付けました。",
+          modalContent: "架空のレストランの静的ページのコーディングを行いました。。社内勉強会のカリキュラムでHTML/CSS/jsについて学習し、「実際にコーディングを行ってwebサイトを作成する」という課題で作成しました。HTML/CSS/Javascriptで作成しています。CSSはSCSSで記述し、レスポンスコーディングにも対応しています。SNSの投稿記事を掲載している部分にjQueryでスライドを付けました。",
           modalTime:"制作時間：約13時間(HTML：4時間、CSS：5時間、js：4時間)",
           modalImage: require('@/assets/images/mv.jpg'),
           modalLink: "./workContents_restaurant/index.html",
+        },
+        {
+          modalTitle: "メモアプリ",
+          modalContent: "Webアプリケーションの作成の練習として、メモアプリを作成しました。HTML/CSS/Javascriptで作成しています。メモの作成・保存・削除と基本機能を備えています。",
+          modalTime:"制作時間：約5時間(HTML：1時間、CSS：1.5時間、js：2.5時間)",
+          modalImage: require('@/assets/images/memoApp.png'),
+          modalLink: "https://github.com/nao7009/memoApp",
         },
         {
           modalTitle: "タクシードライバーのオウンドメディア",
@@ -110,6 +123,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.hoge{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .works{
   width: 100%;
   margin: 0 auto;
@@ -118,9 +137,10 @@ export default {
     &__title{
         text-align: center;
         h2{
+            margin: 10px auto 40px;
             @include mq('max','md') {
-                margin-left: 5px;
-                padding: 5px;
+              margin: 10px auto 20px;
+              padding: 5px;
             }
         }
         p{
@@ -130,11 +150,15 @@ export default {
             }
         }
     }
+    &__items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     &__personalProduction{
       text-align: center;
-      margin: 60px auto 10px;
+      margin: 0 auto;
       @include mq('max','md') {
-        margin: 40px auto 10px;
       }
       p{
           @include mq('max','md') {
