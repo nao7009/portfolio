@@ -50,11 +50,14 @@ export default {
   @include mq('max','md') {
     width: 400px;
     margin: 5px auto;
-    }
+  }
+  @include mq('max','sm') {
+    width: 200px;
+    margin: 5px auto;
+  }
     &__item{
           margin: 10px auto;
           width: 100%;
-
           //hover
           position: relative;
           @include mq('max','md') {
@@ -81,17 +84,17 @@ export default {
         align-items: center;
         justify-content: center; 
         @include mq('max','md') {
-          // height: 85%;
         }
         @include mq('max','sm') {
-          width: 75%;
-          left: 45px;
         }
         p{
           position: relative;
           display: inline-block;
           text-decoration: none;
           @include mq('max','md') {
+          }
+          @include mq('max','sm') {
+            font-size: 8px;
           }
           &:after{
                 position: absolute;
@@ -120,8 +123,6 @@ export default {
         }
     }
     &__image{
-      // width: 400px;
-      // height: 250px;
       width: 350px;
       height: 250px;
       background: #000;
