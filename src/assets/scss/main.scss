@@ -25,7 +25,10 @@ body, header, footer, main, section, p, ul, li{
 }
 
 h1,h2,h3{
-    font-family: $fontType;
+    font-family: $fontTypePc;
+    @include mq('max','sm') {
+       font-family: $fontTypeSm;
+    }
 }
 
 h2{

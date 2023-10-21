@@ -36,5 +36,11 @@ $breakpoints: (
 }
 
 $mainColor:#EEE;
+
+// pc版フォント
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200&display=swap');
-$fontType: 'Work Sans', sans-serif;
+$fontTypePc: 'Work Sans', sans-serif;
+
+// sm版フォント
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,100&display=swap');
+$fontTypeSm: 'Work Sans', sans-serif;
