@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>workContents_cafe</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/slick-theme.css"/>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__contents">
+                <div class="header__contents--logo">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>
+                <div class="header__contents--menu">
+                    <ul>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="atmosphere.html">atmosphere</a></li>
+                        <li><a href="reservation.html">reservation</a></li>
+                        <li><a href="access&info.html">access&info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="reservation">
+            <h1>reservation</h1>
+            <p>ランチとディナーの予約は下記のフォームより予約を承っております。<br>※7名以上のご利用はお手数ですが、お電話での予約をお願いいたします。</p>
+            <div class="reservation__calender">
+                <!-- YYYY年MM月を表示 -->
+                <h1 id="header"></h1>
+                <!-- ボタンクリックで月移動 -->
+                <div id="next-prev-button">
+                    <button id="prev" onclick="prev()"><</button>
+                    <button id="prev" onclick="next()">></button>
+                </div>
+                <!-- カレンダー -->
+                <div id="calender"></div>
+                <!--予約フォーム-->
+            </div>
+            <div class="reservation__form">
+                <div id="form">
+                    <form action="reservation" method="post">
+                        <table>
+                            <tr>
+                                <th>
+                                    日付：
+                                </th>
+                                <td>
+                                    <input type="date" name="name">
+                                </td>
+                                <th>
+                                    時間：
+                                </th>
+                                <td>
+                                    <select name="time">
+                                        <option>12:00</option>
+                                        <option>13:00</option>
+                                        <option>14:30</option>
+                                        <option>15:00</option>
+                                        <option>16:00</option>
+                                        <option>17:00</option>
+                                        <option>18:00</option>
+                                    </select>                                        
+                                </td>
+                                <th>
+                                    人数：
+                                </th>
+                                <td>
+                                    <select name="time">
+                                        <option>2名</option>
+                                        <option>3名</option>
+                                        <option>4名</option>
+                                        <option>5名</option>
+                                        <option>6名</option>
+                                    </select>                                      
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    お名前：
+                                </th>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                                <th>
+                                    フリガナ：
+                                </th>
+                                <td colspan="2">
+                                    <input type="text" name="name">
+                                </td>
+                            </th>
+                            <tr>
+                                <th>
+                                    メールアドレス：
+                                </th>
+                                <td>
+                                    <input type="text" name="mail">
+                                </td>
+                                <th>
+                                    電話番号：
+                                </th>
+                                <td colspan="2">
+                                    <input type="text" name="tel">                                        
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td colspan="2">
+                                    <input type="submit" name="button" value="送信" id="button">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__contents">
+                <div class="footer__contents--sns">
+                    <ul>
+                        <li><a href="https://twitter.com/?lang=ja"><img src="images/twitter.png"></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/instagram.png"></a></li>
+                        <li><a href="https://ja-jp.facebook.com/"><img src="images/facebook.png"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__contents--copy">
+                    <p>Copyright 2022 Cafe CRI All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
