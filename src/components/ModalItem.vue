@@ -18,6 +18,7 @@
             @modal-clicked="modalFlg = $event"
             :modalTitle="modalItems.modalTitle"
             :modalContent="modalItems.modalContent"
+            :modalLanguage="modalItems.modalLanguage"
             :modalTime="modalItems.modalTime"
           />
         </div>

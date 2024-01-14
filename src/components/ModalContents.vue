@@ -5,6 +5,7 @@
       <h2 class="modal__title">{{ modalTitle }}</h2>
       <div class="modal__content">
         <p>{{ modalContent }}</p>
+        <p>{{ modalLanguage }}</p>
         <p>{{ modalTime }}</p>
       </div>
       <div class="modal__button--wrap">
@@ -17,7 +18,7 @@
 
 <script>
 export default {
-  props: ["modalFlg", "modalTitle", "modalContent","modalTime"],
+  props: ["modalFlg", "modalTitle", "modalContent", "modalLanguage","modalTime"],
   data() {
     return {
       childModalFlg: this.modalFlg,
