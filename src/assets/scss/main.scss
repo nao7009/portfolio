@@ -61,3 +61,11 @@ p{
         font-size: 10px;
     }
 }
+
+ul ,li{
+    font-family: $fontTypePc;
+    font-style: italic;
+    @include mq('max','sm') {
+        font-family: $fontTypeSm;
+     }
+}
