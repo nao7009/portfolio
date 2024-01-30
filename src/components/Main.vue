@@ -38,18 +38,18 @@
                             <p>大型案件のディレクションに携わっていました。<br>バナー・LP制作の進行管理や提案書作成等を担当、<br>スケジュール管理を担当し、制作会社への指示やデータ納品等を行っていました。<br>ディレクション業務が未経験だったため自身でも日々勉強をし、<br>チームが円滑に制作を進められるように意識して業務に取り組みました。</p>
                         </div>
                     </div>
-                    <div class="main__carrerItem">
-                        <div class="main__carrerItemSummary">
-                            <p>2021.08～2022.09 | 官公庁システムの運用・保守</p>
-                        </div>
-                        <div class="main__carrerItemDetail">
-                            <p>Windows端末の緊急性の高いパッチ適用やWAF、Windowsサーバのアップデート、利用機関のDNSやメールの設定変更を担当していました。<br>正確性が問われる作業だったので、常にペア間で確認を怠らずに検証やリリースを行っていました。<br>また、スケジュールを常に把握し作業が滞ることなく進められるように配慮をしていました。<br><br>環境：Windows、Linux<br>使用ツール：teraterm、SKYSEA、WSUS、IIS、VMware、Citrixなど</p>
-                        </div>
-                    </div>
                     <div class="main__moreInfoButton" v-if="!expand" @click="open">
                         <p>もっと見る</p>
                     </div>
                     <div v-if="expand">
+                        <div class="main__carrerItem">
+                            <div class="main__carrerItemSummary">
+                                <p>2021.08～2022.09 | 官公庁システムの運用・保守</p>
+                            </div>
+                            <div class="main__carrerItemDetail">
+                                <p>Windows端末の緊急性の高いパッチ適用やWAF、Windowsサーバのアップデート、利用機関のDNSやメールの設定変更を担当していました。<br>正確性が問われる作業だったので、常にペア間で確認を怠らずに検証やリリースを行っていました。<br>また、スケジュールを常に把握し作業が滞ることなく進められるように配慮をしていました。<br><br>環境：Windows、Linux<br>使用ツール：teraterm、SKYSEA、WSUS、IIS、VMware、Citrixなど</p>
+                            </div>
+                        </div>
                         <div class="main__carrerItem">
                             <div class="main__carrerItemSummary">
                                 <p>2021.06～2021.07 | オウンドメディアのサイト制作</p>
@@ -103,6 +103,199 @@
                     <div class="main__title">
                         <h3>Skills</h3>
                     </div>
+                    <div class="skills">
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_html.png" alt="HTMLの画像">
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>HTML</h3>
+                                <p>デザインに沿った静的ページのコーディング</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_css.png" alt="CSSの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>CSS</h3>
+                                <p>CSSアニメーション（調べながらであれば可）</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_js.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>javascript</h3>
+                                <p>メソッド等を利用した動的ページの作成</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_vue.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Vue.js</h3>
+                                <p>コンポーネントの実装</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_nuxt.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Nuxt.js</h3>
+                                <p>コンポーネントの実装</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_java.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Java</h3>
+                                <p>データベースを用いた簡易なアプリケーションの作成<br>設計図を見ながらのコーディング</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_mysql.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>My SQL</h3>
+                                <p>コードの内容理解<br>データベース作成（調べながらであれば可）</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_wordpress.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Wordpress</h3>
+                                <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_php.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>PHP</h3>
+                                <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_word.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Word</h3>
+                                <p>書類作成（画像や表の挿入などは可）</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_excel.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Excel</h3>
+                                <p>資料作成（計算・関数の挿入、グラフやチャートの挿入などは可）</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_powerpoint.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>PowerPoint</h3>
+                                <p>スライド作成（アニメーション付け可）</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_windowsServer.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>Windows Server</h3>
+                                <p>システムのアップデート</p>
+                            </div>
+                        </div>
+                        <div class="skillItem">
+                            <div class="skillImage">
+                                <img src="../assets/images/icon_teraterm.png" alt="vueの画像"> 
+                                <svg viewBox="0 0 108 108">
+                                    <circle class="base" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                </svg>
+                            </div>
+                            <div class="skillText">
+                                <h3>teraterm</h3>
+                                <p>サーバ接続・コマンド操作によるサーバの設定変更</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition>  
+        <!-- <transition>
+            <div class="fadeInAfter" :class="{fadeIn:visible2}">
+                <div class="main__skills">
+                    <div class="main__title">
+                        <h3>Skills</h3>
+                    </div>
                     <div class="main__skillsList--accordion">
                         <AccordionMenu>
                             <div slot="title">HTML/CSS</div>
@@ -135,6 +328,12 @@
                             </div>
                         </AccordionMenu>
                         <AccordionMenu>
+                            <div slot="title">Teraterm</div>
+                            <div class="main__skillsList--content" slot="content">
+                                <p>サーバへ接続・コマンド操作によるサーバの設定変更</p>
+                            </div>
+                        </AccordionMenu>
+                        <AccordionMenu>
                             <div slot="title">Word</div>
                             <div class="main__skillsList--content" slot="content">
                                 <p>書類作成（画像や表の挿入などは可）</p>
@@ -161,17 +360,17 @@
                     </div>
                 </div>           
             </div>
-        </transition>
+        </transition> -->
     </main>
 </template>
 
 <script>
-import AccordionMenu from "@/components/Accordion"
+// import AccordionMenu from "@/components/Accordion"
 
 export default {
   name: 'MyProfile',
   components: {
-    AccordionMenu,
+    // AccordionMenu,
   },
   data(){
     return{
@@ -516,6 +715,128 @@ export default {
         }
     }
 }
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
+}
+.skillItem{
+    margin: 10px;
+    padding: 10px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+        margin: 5px;
+        padding: 5px;
+        width: 100px;
+    }
+}
+
+.skillImage{
+    position: relative;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
+    svg{
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    @include mq('max','md') {
+        width: 70px;
+        height: 70px;
+    }
+    @include mq('max','sm') {
+        width: 50px;
+        height: 50px;
+    }
+    circle{
+        position: relative;
+        fill: none; // 塗りつぶし
+        stroke-width: 8; //線の太さ
+        stroke: #f3f3f3; // 線の色
+        stroke-dasharray: 314s; // 線の間隔
+        stroke-dashoffset: 0; // 線が始まる位置
+        stroke-linecap: round; // 端の形
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+        }
+    }
+    .line{
+        stroke: #999;
+        animation: circleAnime 1s forwards;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+        }
+    }
+    @keyframes circleAnime{
+        0%{
+            stroke-dasharray: 0 314;
+        }
+        99.9%,
+        to{
+            stroke-dasharray: 314 314;
+        }
+    }
+}
+img{
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    @include mq('max','md') {
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+        width: 30px;
+        height: 30px;
+    }
+    @include mq('max','sm') {
+        top: calc(50% - 13px);
+        left: calc(50% - 13px);
+        width: 25px;
+        height: 25px;
+    }
+    }
+}
+.skillText{
+    color: #555;
+    text-align: center;
+    h3{
+        margin: 10px;
+        font-size: 20px;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+            margin: 5px;
+            font-size: 10px;
+        }
+    }
+    p{
+        margin: 20px;
+        padding: 5px 0 0;
+        font-size: 12px;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+            margin: 10px;
+            padding: 5px 0 0;
+            font-size: 8px;            
+        }
+    }
+}
+
 //Carrer,Skillsクラスのフェードインに使用
 .fadeIn {
   animation: fadeIn 2s;

@@ -12,7 +12,7 @@ const routes = [
   // { path: '/home', component: HomePage },
   { path: '/', component: HomePage },
   { path: '/works', component: MyWorks },
-  { path: '/contact', component: ContactForm }
+  { path: '/contact', component: ContactForm },
 ]
 const router = new VueRouter({
   mode: 'history',

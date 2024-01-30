@@ -46,10 +46,10 @@ export default {
   }
 }
 .open-enter-active {
-  animation: open .2s;
+  animation: open 1s;
 }
 .open-leave-active {
-  animation: open .2s linear reverse;
+  animation: open .5s linear reverse;
 }
 
 @keyframes rotate {
@@ -58,7 +58,7 @@ export default {
   }
 }
 .rotate-enter-active {
-  animation: rotate .2s linear;
+  animation: rotate .9s linear;
 
 }
 .accordion {
