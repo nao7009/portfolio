@@ -109,7 +109,7 @@
                                 <img src="../assets/images/icon_html.png" alt="HTMLの画像">
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*80)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -122,7 +122,7 @@
                                 <img src="../assets/images/icon_css.png" alt="CSSの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*80)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -135,7 +135,7 @@
                                 <img src="../assets/images/icon_js.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*70)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -148,7 +148,7 @@
                                 <img src="../assets/images/icon_vue.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*75)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -161,7 +161,7 @@
                                 <img src="../assets/images/icon_nuxt.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*40)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -174,7 +174,7 @@
                                 <img src="../assets/images/icon_java.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*60)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -187,7 +187,7 @@
                                 <img src="../assets/images/icon_mysql.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*60)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -200,7 +200,7 @@
                                 <img src="../assets/images/icon_wordpress.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*50)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -213,7 +213,7 @@
                                 <img src="../assets/images/icon_php.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*50)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -226,7 +226,7 @@
                                 <img src="../assets/images/icon_word.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*85)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -239,7 +239,7 @@
                                 <img src="../assets/images/icon_excel.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*85)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -252,7 +252,7 @@
                                 <img src="../assets/images/icon_powerpoint.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*85)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -265,7 +265,7 @@
                                 <img src="../assets/images/icon_windowsServer.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*70)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -278,7 +278,7 @@
                                 <img src="../assets/images/icon_teraterm.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*88)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*70)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
@@ -726,7 +726,7 @@ export default {
 }
 .skillItem{
     margin: 10px;
-    padding: 10px;
+    padding: 20px 10px 10px;
     width: 230px;
     display: flex;
     align-items: center;
@@ -736,7 +736,7 @@ export default {
     }
     @include mq('max','sm') {
         margin: 5px;
-        padding: 5px;
+        padding: 10px 5px 5px;
         width: 100px;
     }
 }
@@ -774,7 +774,7 @@ export default {
     }
     .line{
         stroke: #999;
-        animation: circleAnime 1s forwards;
+        animation: circleAnime 2s forwards;
         @include mq('max','md') {
         }
         @include mq('max','sm') {
