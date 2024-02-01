@@ -103,7 +103,7 @@
                     <div class="main__title">
                         <h3>Skills</h3>
                     </div>
-                    <div class="skills">
+                    <div class="skills" :class="{line:circle}">
                         <div class="skillItem">
                             <div class="skillImage">
                                 <img src="../assets/images/icon_html.png" alt="HTMLの画像">
@@ -114,7 +114,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>HTML</h3>
-                                <p>デザインに沿った静的ページのコーディング</p>
+                                <p>自社の勉強会及び独学でWebサイトの構築に必要なスキルを身につけました。<br>デザインに沿った静的ページのコーディングができます。<br>VisualStudioCodeをメインで使用しています。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -127,7 +127,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>CSS</h3>
-                                <p>CSSアニメーション（調べながらであれば可）</p>
+                                <p>自社の勉強会及び独学でWebサイトの構築に必要なスキルを身につけました。<br>デザインに基づいた実装ができます。<br>また、調べながらであればCSSアニメーションの実装も可能です。<br>VisualStudioCodeをメインで使用しています。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -140,7 +140,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>javascript</h3>
-                                <p>メソッド等を利用した動的ページの作成</p>
+                                <p>自社の勉強会及び独学で静的ページに簡単な動きを付けるスキルを身につけました。<br>メソッド等を利用し、ボタン操作や文字の色を変えるなどの動きを付けることができます。<br>VisualStudioCodeをメインで使用しています。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -153,7 +153,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>Vue.js</h3>
-                                <p>コンポーネントの実装</p>
+                                <p>自社の勉強会でコンポーネントを利用したページ制作を勉強し、独学で本サイト等を実装しました。<br>ヘッダー・フッター、モーダルなどのパーツをコンポーネントごとに分けて実装し、Webページを作成できます。<br>prop・emitでデータを受け渡す実装も可能です。<br>VisualStudioCodeをメインで使用しています。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -166,7 +166,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>Nuxt.js</h3>
-                                <p>コンポーネントの実装</p>
+                                <p>Udemyを使って勉強中です。<br>コンポーネントの実装について理解を深めているところで、学習した内容をもとにカロリー計算のアプリケーションを作成しました。<br>VisualStudioCodeをメインで使用しています。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -179,7 +179,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>Java</h3>
-                                <p>データベースを用いた簡易なアプリケーションの作成<br>設計図を見ながらのコーディング</p>
+                                <p>職業訓練校でメソッドやオブジェクト指向に基づいたプログラミング等について学習しました。<br>Servlet/jspも学習済みです。<br>データベースを用いた簡易なアプリケーションの作成や設計図を見ながらの実装ができます。<br>Ecripseをメインで使用していました。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -187,12 +187,12 @@
                                 <img src="../assets/images/icon_mysql.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*60)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*55)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
                                 <h3>My SQL</h3>
-                                <p>コードの内容理解<br>データベース作成（調べながらであれば可）</p>
+                                <p>職業訓練校でコマンドやCRUDについて学習しました。<br>調べながらであればデータベースの作成やデータの登録・更新・削除等の一連の操作ができます。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -205,7 +205,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>Wordpress</h3>
-                                <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
+                                <p>自社の勉強会で学習し、業務で使用しました。<br>インストール及び初期設定、既存のページに追加するページ作成</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -213,12 +213,12 @@
                                 <img src="../assets/images/icon_php.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*50)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*45)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
                                 <h3>PHP</h3>
-                                <p>インストールおよび初期設定<br>既存のページに追加するページ作成</p>
+                                <p>自社の勉強会で学習し、業務で使用しました。<br>コードの理解やインストール、初期設定が可能です。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -231,7 +231,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>Word</h3>
-                                <p>書類作成（画像や表の挿入などは可）</p>
+                                <p>本ツールを用いた書類作成が可能です。画像や表を挿入した資料も作成できます。<br>内容に合ったページの設定及びレイアウトができます。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -244,7 +244,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>Excel</h3>
-                                <p>資料作成（計算・関数の挿入、グラフやチャートの挿入などは可）</p>
+                                <p>当ツールを用いた資料作成が可能です。<br>計算や関数の挿入、グラフやチャートの挿入などができます。<br>マニュアルや手順書の作成もできます。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -257,7 +257,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>PowerPoint</h3>
-                                <p>スライド作成（アニメーション付け可）</p>
+                                <p>当ツールを用いた資料作成が可能です。<br>発表や提案に適したスライド作成ができます。<br>アニメーションの挿入も可能です。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -265,12 +265,12 @@
                                 <img src="../assets/images/icon_windowsServer.png" alt="vueの画像"> 
                                 <svg viewBox="0 0 108 108">
                                     <circle class="base" cx="54" cy="54" r="50"></circle>
-                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*70)/100)" cx="54" cy="54" r="50"></circle>
+                                    <circle class="line" style=" stroke-dashoffset: calc(314 - (314*60)/100)" cx="54" cy="54" r="50"></circle>
                                 </svg>
                             </div>
                             <div class="skillText">
                                 <h3>Windows Server</h3>
-                                <p>システムのアップデート</p>
+                                <p>業務で使用していた経験があります。<br>システムのアップデート操作が可能です。</p>
                             </div>
                         </div>
                         <div class="skillItem">
@@ -283,7 +283,7 @@
                             </div>
                             <div class="skillText">
                                 <h3>teraterm</h3>
-                                <p>サーバ接続・コマンド操作によるサーバの設定変更</p>
+                                <p>業務で使用していた経験があります。<br>サーバ接続やコマンド操作によるサーバの設定変更等ができます。</p>
                             </div>
                         </div>
                     </div>
@@ -377,6 +377,7 @@ export default {
         expand:false,
         visible: false,
         visible2: false,
+        circle: false
     };
   },
   created() {
@@ -396,8 +397,9 @@ export default {
             if (!this.visible) {
                 this.visible = window.scrollY > 100;
             }
-            if (!this.visible2) {
+            if (!this.visible2 && !this.circle) {
                 this.visible2 = window.scrollY > 800;
+                this.circle = window.scrollY > 800;
             }
         },
     }
@@ -720,6 +722,8 @@ export default {
     display: flex;
     flex-wrap: wrap;
     @include mq('max','md') {
+        display: block;
+        flex-wrap: nowrap;
     }
     @include mq('max','sm') {
     }
@@ -733,11 +737,12 @@ export default {
     flex-direction: column;
     background-color: #fff;
     @include mq('max','md') {
+        flex-direction: row;
+        width: 350px;
+        margin: 10px auto;
     }
     @include mq('max','sm') {
-        margin: 5px;
         padding: 10px 5px 5px;
-        width: 100px;
     }
 }
 
@@ -774,7 +779,7 @@ export default {
     }
     .line{
         stroke: #999;
-        animation: circleAnime 2s forwards;
+        animation: circleAnime 5s forwards;
         @include mq('max','md') {
         }
         @include mq('max','sm') {
@@ -813,6 +818,12 @@ img{
 .skillText{
     color: #555;
     text-align: center;
+    @include mq('max','md') {
+        margin-left: 10px;
+        text-align: left;
+    }
+    @include mq('max','sm') {
+    }
     h3{
         margin: 10px;
         font-size: 20px;
